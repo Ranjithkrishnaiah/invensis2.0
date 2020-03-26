@@ -1,0 +1,86 @@
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 767px) {
+    header.masthead .intro-text .intro-lead-in {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    header.masthead .intro-text .intro-heading {
+        font-size: 24px;
+        margin: 10px 0px;
+    }
+    .intro-medium {
+        font-size: 14px;
+    }
+    a.btn.btn-theme {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+
+/* Tablet Portrait (devices and browsers)
+====================================================================== */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    li.nav-item.last-nav>a {
+        background-color: #FC6A55;
+        border-radius: 18px;
+        margin-left: 10px;
+    }
+    header.masthead .intro-text {
+        padding: 230px 150px 180px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        transition: padding-top .3s, padding-bottom .3s;
+        border: none;
+        background-color: transparent;
+    }
+    #mainNav .navbar-brand {
+        transition: all .3s;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        padding: 12px 0;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    li.nav-item.last-nav>a {
+        background-color: #FC6A55;
+        border-radius: 18px;
+        margin-left: 15px;
+        padding: 10px 15px !important;
+    }
+    header.masthead .intro-text {
+        padding: 230px 230px 180px;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        padding: 10px 15px;
+    }
+}

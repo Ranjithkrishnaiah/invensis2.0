@@ -1,0 +1,122 @@
+/*global css */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+a {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none !important;
+}
+img {
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+}
+/* Ripple effect for buttons */
+.ripple {
+    background-position: center;
+    transition: background 0.3s;
+}
+.ripple:hover {
+    background: #fa8473 radial-gradient(circle, transparent 1%, #fa8473 1%) center/15000%;
+}
+.ripple:active {
+    background-color: #FC6A55;
+    background-size: 100%;
+    transition: background 0s;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0 #fa8473 !important;
+}
+/*=============================================================
+        navigation & header css starts
+==============================================================*/
+#mainNav {
+	background-color: #212529
+}
+#mainNav .navbar-brand {
+	color: #FC6A55;
+}
+#mainNav .navbar-brand.active,
+#mainNav .navbar-brand:active,
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-brand:hover {
+	color: #fec503;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+	font-weight: 400;
+	padding: 10px 10px;
+	color: #ffffff;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+	color: #FC6A55;
+}
+header.masthead {
+	text-align: center;
+	color: #ffffff;
+	background-image: url(../images/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	background-size: cover
+}
+img.img-fluid.img-logo {
+    width: 145px;
+    height: auto;
+}
+#mainNav .navbar-nav .nav-item.last-nav .nav-link.active,
+#mainNav .navbar-nav .nav-item.last-nav .nav-link:hover {
+	color: #ffffff;
+}
+/*=============================================================
+        navigation & header css ends
+==============================================================*/
+
+/*=============================================================
+        main-banner css starts
+==============================================================*/
+header.masthead .intro-text {
+    padding: 230px 0px 180px;
+}
+header.masthead .intro-text .intro-lead-in {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+}
+header.masthead .intro-text .intro-heading {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+.intro-medium {
+    font-size: 18px;
+    font-weight: 300;
+}
+a.btn.btn-theme {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #FC6A55;
+    border-radius: 24px;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+/*=============================================================
+        main-banner css ends
+==============================================================*/
