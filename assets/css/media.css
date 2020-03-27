@@ -8,10 +8,21 @@ M E D I A  Q U E R I E S
 
 }
 
+@media (max-width: 576px) {
+    .d-flex.justify-content-around.home-clients-block img {
+        margin: 10px 0px;
+    }
+    .d-flex.justify-content-around.home-clients-block {
+        padding: 10px 0px;
+    }
+}
+
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-
+    .d-flex.justify-content-around.home-clients-block {
+        margin: 0px 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -30,6 +41,18 @@ M E D I A  Q U E R I E S
         font-size: 12px;
         margin-top: 20px;
     }
+    .services-card {
+        margin-bottom: 20px;
+    }
+    .btn-explore {
+        margin-top: 10px;
+    }
+    .services-block-text>h2 {
+        font-size: 24px;
+    }
+    .services-block-text>p {
+        font-size: 18px;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -41,7 +64,7 @@ M E D I A  Q U E R I E S
         margin-left: 10px;
     }
     header.masthead .intro-text {
-        padding: 230px 150px 180px;
+        padding: 150px 170px 200px;
     }
 }
 
@@ -61,7 +84,6 @@ M E D I A  Q U E R I E S
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
-        background-color: #212529;
     }
     #mainNav.navbar-shrink .navbar-brand {
         padding: 12px 0;
@@ -78,7 +100,7 @@ M E D I A  Q U E R I E S
         padding: 10px 15px !important;
     }
     header.masthead .intro-text {
-        padding: 230px 230px 180px;
+        padding: 190px 230px 210px;
     }
     #mainNav .navbar-nav .nav-item .nav-link {
         padding: 10px 15px;

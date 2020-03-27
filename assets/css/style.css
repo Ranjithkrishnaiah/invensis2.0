@@ -47,7 +47,10 @@ img {
         navigation & header css starts
 ==============================================================*/
 #mainNav {
-	background-color: #212529
+	background-color: #082747
+}
+#mainNav.navbar-shrink {
+    background-color: #082747;
 }
 #mainNav .navbar-brand {
 	color: #FC6A55;
@@ -63,14 +66,16 @@ img {
 	padding: 10px 10px;
 	color: #ffffff;
 }
-#mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
 	color: #FC6A55;
+}
+li.nav-item.active> a.nav-link {
+    color: #FC6A55 !important;
 }
 header.masthead {
 	text-align: center;
 	color: #ffffff;
-	background-image: url(../images/header-bg.jpg);
+	background-image: url(../images/main-banner.jpg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
@@ -92,7 +97,7 @@ img.img-fluid.img-logo {
         main-banner css starts
 ==============================================================*/
 header.masthead .intro-text {
-    padding: 230px 0px 180px;
+    padding: 150px 0px 200px;
 }
 header.masthead .intro-text .intro-lead-in {
     font-size: 30px;
@@ -119,4 +124,102 @@ a.btn.btn-theme {
 }
 /*=============================================================
         main-banner css ends
+==============================================================*/
+
+/*=============================================================
+        home-clients css starts
+==============================================================*/
+section.home-clients {
+    margin-top: -85px;
+}
+.d-flex.justify-content-around.home-clients-block {
+    padding: 40px 0px;
+    background-color: #ffffff;
+    border: 1px solid rgba(236, 235, 237, 0);
+    box-shadow: 0px 16px 52px 0px rgba(44, 43, 43, 0.2);
+}
+/*=============================================================
+        home-clients css ends
+==============================================================*/
+
+/*=============================================================
+        our-services css starts
+==============================================================*/
+section.our-services {
+    padding: 75px 0px;
+}
+.services-block-text {
+    text-align: center;
+}
+.services-block-text>h2 {
+    font-size: 30px;
+}
+.services-block-text>p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+.hr-line {
+    width: 60px;
+    height: 2px;
+    background-color: #FC6A55;
+    display: inline-block;
+}
+.row.services-row {
+    margin-top: 50px;
+}
+.services-card {
+    position: relative;
+    top: 0;
+    border: 1px solid #D2D2D2;
+    border-radius: 8px;
+}
+.services-body {
+    padding: 20px;
+}
+a.btn.btn-more.ripple {
+    padding: 0;
+}
+a.btn.btn-more.ripple>span {
+    font-weight: bold;
+}
+.services-card:hover {
+    top: -20px;
+    border: 1px solid #FC6A55;
+    transition: top ease 0.5s;
+}
+.services-card:hover a.btn.btn-more.ripple {
+    padding: 5px 20px;
+    border: 1px solid #FC6A55;
+    color: #FC6A55;
+    border-radius: 20px;
+    transition: top ease 0.5s;
+}
+.services-card:hover a.btn.btn-more.ripple span {
+    display: none;
+    transition: top ease 0.5s;
+}
+a.btn.btn-more.ripple:active {
+    color: #000000 !important;
+    background-color: transparent;
+}
+a.btn.btn-more.ripple:active {
+    color: #ffffff !important;
+}
+.services-body>a>h5, .services-card:hover .services-body>h5 {
+    color: #FC6A55;
+}
+.btn-explore {
+    text-align: center;
+    margin-top: 30px;
+}
+a.btn.btn-explore.ripple {
+    background-color: #FC6A55;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 24px;
+    font-size: 14px;
+}
+/*=============================================================
+        our-services css ends
 ==============================================================*/
