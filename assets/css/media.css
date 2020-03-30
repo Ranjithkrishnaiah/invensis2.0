@@ -15,6 +15,13 @@ M E D I A  Q U E R I E S
     .d-flex.justify-content-around.home-clients-block {
         padding: 10px 0px;
     }
+    .business-icons {
+        margin: 30px 0 0;
+    }
+    ul.business-icons>li {
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 
 
@@ -22,6 +29,9 @@ M E D I A  Q U E R I E S
 @media (min-width: 768px) {
     .d-flex.justify-content-around.home-clients-block {
         margin: 0px 50px;
+    }
+    .solutions-texts {
+        text-align: left;
     }
 }
 
@@ -37,8 +47,8 @@ M E D I A  Q U E R I E S
     .intro-medium {
         font-size: 14px;
     }
-    a.btn.btn-theme {
-        font-size: 12px;
+    button.btn.btn-theme {
+        font-size: 14px;
         margin-top: 20px;
     }
     .services-card {
@@ -53,6 +63,12 @@ M E D I A  Q U E R I E S
     .services-block-text>p {
         font-size: 18px;
     }
+    button.btn.btn-more.ripple {
+        font-size: 14px;
+    }
+    .solutions-texts {
+        margin-bottom: 30px;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -65,6 +81,9 @@ M E D I A  Q U E R I E S
     }
     header.masthead .intro-text {
         padding: 150px 170px 200px;
+    }
+    .video-business {
+        padding: 0px 200px;
     }
 }
 
@@ -95,14 +114,17 @@ M E D I A  Q U E R I E S
 @media (min-width: 1200px) {
     li.nav-item.last-nav>a {
         background-color: #FC6A55;
-        border-radius: 18px;
+        border-radius: 24px;
         margin-left: 15px;
-        padding: 10px 15px !important;
+        padding: 10px 20px !important;
     }
     header.masthead .intro-text {
         padding: 190px 230px 210px;
     }
     #mainNav .navbar-nav .nav-item .nav-link {
         padding: 10px 15px;
+    }
+    .video-business {
+        padding: 0px 300px;
     }
 }
