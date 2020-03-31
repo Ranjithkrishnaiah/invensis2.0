@@ -5,7 +5,9 @@ M E D I A  Q U E R I E S
 */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    .padding-right {
+        padding-right: 0px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -33,7 +35,20 @@ M E D I A  Q U E R I E S
     .solutions-texts {
         text-align: left;
     }
+    .padding-left {
+        padding-left: 0px;
+    }
+    .stratergy-texts {
+        padding-left: 30px;
+    }
+    .resources-texts {
+        text-align: left;
+    }
+    .resource-pd {
+        padding-right: 50px;
+    }
 }
+
 
 @media (max-width: 767px) {
     header.masthead .intro-text .intro-lead-in {
@@ -69,6 +84,44 @@ M E D I A  Q U E R I E S
     .solutions-texts {
         margin-bottom: 30px;
     }
+    .services-card:hover {
+        top: 0px;
+    }
+    .resources-texts {
+        margin-top: 0px;
+    }
+    .resources-blog-explore {
+        text-align: center;
+    }
+    ul.navs-resources li {
+        padding: 0 15px;
+    }
+    ul.navs-resources {
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .services-body {
+        height: 136px;
+    }
+    .solutions-card {
+        height: 257px;
+    }
+    ul.navs-resources li {
+        padding: 0px 10px;
+    }
+    ul.organize-ul>li {
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul.organize-ul>li img {
+        margin: -10px 0 0 15px;
+    }
+    .enquire-div {
+        height: 220px;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -84,6 +137,33 @@ M E D I A  Q U E R I E S
     }
     .video-business {
         padding: 0px 200px;
+    }
+    .advisors-div>h2 {
+        font-size: 22px;
+    }
+    .advisors-div>h3 {
+        font-size: 18px;
+    }
+    .quote-div {
+        margin-top: 10px;
+    }
+    .organize-head {
+        padding: 30px 10px 0px 10px;
+    }
+    .enquire-div {
+        height: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .advisors-div>h2 {
+        font-size: 22px;
+    }
+    .advisors-div>h3 {
+        font-size: 18px;
+    }
+    .quote-div {
+        margin-top: 0px;
     }
 }
 
@@ -107,6 +187,21 @@ M E D I A  Q U E R I E S
     #mainNav.navbar-shrink .navbar-brand {
         padding: 12px 0;
     }
+    .services-body {
+        height: 112px;
+    }
+    .solutions-card {
+        height: 246px;
+    }
+    .resources-blog-explore>h5 {
+        padding-right: 30px;
+    }
+    .organize-body {
+        height: 230px;
+    }
+    .enquire-block {
+        margin: 0px 50px;
+    }
 }
 
 
@@ -126,5 +221,8 @@ M E D I A  Q U E R I E S
     }
     .video-business {
         padding: 0px 300px;
+    }
+    .stratergy-texts {
+        padding-right: 40px;
     }
 }

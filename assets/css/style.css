@@ -134,7 +134,6 @@ button.btn.btn-theme {
     background-color: #FC6A55;
     border-radius: 24px;
     padding: 10px 20px;
-    margin-top: 30px;
 }
 /*=============================================================
         main-banner css ends
@@ -224,7 +223,7 @@ button.btn.btn-more:active {
 }
 .btn-explore {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 /*=============================================================
         our-services css ends
@@ -310,7 +309,7 @@ button.btn.btn-theme-white {
     font-weight: bold;
     color: #FC6A55;
     background-color: #ffffff;
-    border: 1px solid #0765E3;
+    border: 1px solid #FC6A55;
     border-radius: 24px;
     padding: 10px 20px;
     margin-top: 30px;
@@ -427,3 +426,256 @@ button.btn.btn-more-white.ripple {
 /*=============================================================
        top-industries css ends
 ==============================================================*/
+
+/*=============================================================
+       business-stratergy css starts
+==============================================================*/
+.quotes-block {
+    background-color: #3C3C3C;
+    padding: 50px 30px;
+    color: #ffffff;
+    margin-bottom: 75px;
+}
+.advisors-div>h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+.advisors-div>h3 {
+    font-size: 26px;
+    font-weight: 200;
+}
+.quote-div {
+    margin-top: 25px;
+}
+.stratergy-texts {
+    margin-bottom: 10px;
+}
+.active .card-header {
+    background-color: white;
+    border-bottom: 0;
+}
+.active .panel-body {
+    border: 0;
+}
+.card-head-business {
+    background-color: transparent !important;
+    padding-left: 32px;
+    border: 0;
+    cursor: pointer;
+}
+.card-business {
+    border: 0;
+    background-color: transparent;
+    border-radius: 0px;
+}
+.card-business.active {
+    background-color: rgba(245, 245, 245, 0.58);
+}
+img.img-fluid.business-img {
+    width: 50px;
+    padding: 5px;
+    background-color: #DDEDC4;
+    border-radius: 100%;
+}
+.head-toggle-business>span {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 15px;
+}
+.card-body-business {
+    padding: 0px 30px 0px 101px;
+}
+.collapse-business {
+    position: relative;
+    top: -15px;
+}
+.card-body-business>p {
+    margin: 0;
+}
+.card-business.active .head-toggle-business span {
+    color: #FC6A55;
+}
+.stratergy-texts {
+    padding-top: 30px;
+}
+img.business-img-main {
+    width: 100%;
+}
+/*=============================================================
+       business-stratergy css ends
+==============================================================*/
+
+/*=============================================================
+       resources-sec css starts
+==============================================================*/
+section.resources-sec {
+    background-color: #F5F5F5;
+}
+.resource-rel {
+    position: relative;
+}
+img.img-resources-blog {
+    width: 100%;
+}
+.bloger-body {
+    background-color: #ffffff;
+    padding: 20px;
+}
+.resources-blog {
+    margin-top: 30px;
+    border: 1px solid #E0E0E0;
+    cursor: pointer;
+}
+.bloger-body>h6 {
+    font-size: 14px;
+}
+.bloger-body>p {
+    padding: 5px 0px;
+    font-size: 12px;
+}
+img.img-resources-blog-icon {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    background-color: #ffffff;
+    border: 1px solid #B9CEDE;
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+}
+img.word-blog-icon {
+    right: 55px;
+}
+.resources-texts {
+    margin-top: 130px;
+}
+.resources-blog:hover .bloger-body>h6 {
+    color: #FC6A55;
+}
+.resources-blog-explore {
+    margin-top: 30px;
+}
+.resources-blog-explore>h5 {
+    font-size: 24px;
+    font-weight: 300;
+}
+ul.navs-resources {
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+ul.navs-resources li {
+    padding: 0 30px;
+}
+ul.navs-resources li a {
+    background-color: transparent;
+    color: #000000;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+}
+ul.navs-resources li a:hover {
+    background-color: transparent !important;
+    color: #FC6A55 !important;
+}
+ul.navs-resources li a.active {
+    background-color: transparent !important;
+    color: #FC6A55 !important;
+    border-bottom: 2px solid #FC6A55;
+    border-radius: 0;
+}
+/*=============================================================
+       resources-sec css ends
+==============================================================*/
+
+/*=============================================================
+       organization-sec css starts
+==============================================================*/
+.organize-block {
+    border: 1px solid #DFDFDF;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.organize-head {
+    padding: 30px 50px 0px 10px;
+    text-align: right;
+    position: relative;
+}
+ul.organize-ul {
+    padding: 0;
+}
+ul.organize-ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+ul.organize-ul>li h6 {
+    font-weight: bold;
+}
+ul.organize-ul>li p {
+    color: #959595;
+}
+ul.organize-ul>li img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin: -30px 0 0 15px;
+}
+.organize-body {
+    padding: 30px 20px;
+    background-color: #FBFBFB;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+}
+.organize-body>p {
+    font-style: italic;
+    margin: 0;
+}
+.triangle-shape {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #DDDDDD;
+    border-right: 30px solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: -16px;
+}
+/*=============================================================
+       organization-sec css ends
+==============================================================*/
+
+
+
+.enquire-block {
+    box-shadow: 0 16px 52px 0 rgba(44, 43, 43, 0.2);
+    margin: 0;
+}
+.enquire-div {
+    text-align: center;
+    padding: 30px;
+    background-color: #FBFBFB;
+}
+.enquire-div>img {
+    width: 40px;
+}
+.enquire-div>h6 {
+    padding: 10px 0px;
+    margin: 0;
+    font-weight: 600;
+}
+.enquire-div>p {
+    margin: 0;
+}
+.enquire-padding {
+    padding: 0;
+}
+.enquire-div.enq, .enquire-div:hover {
+    background-color: #FC6A55;
+    color: #ffffff;
+}
+.enquire-div:hover .img-enq1 {
+    display: none;
+}
+.enquire-div:hover .img-enq2 {
+    display: inline-block !important;
+}
