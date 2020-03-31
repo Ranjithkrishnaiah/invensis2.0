@@ -595,7 +595,10 @@ ul.navs-resources li a.active {
 .organize-block {
     border: 1px solid #DFDFDF;
     border-radius: 20px;
-    margin-top: 50px;
+    margin: 50px 0px 30px;
+}
+section.enquire-sec {
+    padding-top: 30px;
 }
 .organize-head {
     padding: 30px 50px 0px 10px;
@@ -644,8 +647,9 @@ ul.organize-ul>li img {
        organization-sec css ends
 ==============================================================*/
 
-
-
+/*=============================================================
+       enquire-sec css starts
+==============================================================*/
 .enquire-block {
     box-shadow: 0 16px 52px 0 rgba(44, 43, 43, 0.2);
     margin: 0;
@@ -679,3 +683,89 @@ ul.organize-ul>li img {
 .enquire-div:hover .img-enq2 {
     display: inline-block !important;
 }
+/*=============================================================
+       enquire-sec css ends
+==============================================================*/
+
+/*=============================================================
+       footer-top css starts
+==============================================================*/
+ul.footer-block {
+    padding: 0;
+}
+ul.footer-block>li {
+    list-style-type: none;
+    float: left;
+    width: 20%;
+}
+ul.footer-block>li>h5 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FC6A55;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+ul.footer-block>li>p {
+    margin: 0;
+    line-height: 27px;
+    color: #5D5D5D;
+}
+ul.footer-block>li>p>a, ul.footer-block>li>h6>a {
+    color: #5D5D5D;
+}
+ul.footer-block>li>p>a:hover {
+    color: #FC6A55;
+}
+ul.footer-block>li>h6 {
+    font-size: 14px;
+    margin: 0;
+    line-height: 27px;
+    color: #5D5D5D;
+    font-weight: bold;
+}
+button.btn-top-0 {
+    margin-top: 0px !important;
+}
+.footer-padding {
+    padding: 180px 0px 50px;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #BCBCBC;
+    margin-top: -170px;
+}
+/*=============================================================
+       footer-top css ends
+==============================================================*/
+
+/*=============================================================
+       footer-bottom css starts
+==============================================================*/
+section.footer-bottom {
+    background-color: #1D1D1D;
+    float: left;
+    width: 100%;
+    padding: 20px 0px;
+}
+.footer-bottom-block>img {
+    width: 145px;
+}
+.footer-bottom-block>p {
+    color: #959595;
+    font-size: 12px;
+    margin: 0;
+    line-height: 21px;
+}
+ul.social-icons>li {
+    display: inline-block;
+    padding-left: 15px;
+}
+ul.social-icons>li>a>img {
+    width: 16px;
+}
+ul.social-icons {
+    padding-top: 10px;
+}
+/*=============================================================
+       footer-bottom css ends
+==============================================================*/
