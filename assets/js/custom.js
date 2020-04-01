@@ -1,3 +1,4 @@
+// navbar fixed on top script
 ! function(e) {
     "use strict";
     e('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -19,3 +20,50 @@
     }
     a(), e(window).scroll(a)
 }(jQuery);
+
+
+
+// accordion scipt
+(function() {
+	$(".card").on("show.bs.collapse hide.bs.collapse", function(e) {
+		if (e.type=='show'){
+		$(this).addClass('active');
+						console.log('ok')
+		}else{
+		$(this).removeClass('active');
+		}
+	});
+}).call(this);
+
+
+
+// Product (Tools) show/hide scipt
+jQuery(document).ready(function(){
+    jQuery('.tools-img2').hide();
+    jQuery('.tools-img3').hide();
+    jQuery('.tools-img4').hide();
+    jQuery('.tools-card1').hover(function() {
+        jQuery('.tools-img1').show();
+        jQuery('.tools-img2').hide();
+        jQuery('.tools-img3').hide();
+        jQuery('.tools-img4').hide();
+    });
+    jQuery('.tools-card2').hover(function() {
+        jQuery('.tools-img2').show();
+        jQuery('.tools-img1').hide();
+        jQuery('.tools-img3').hide();
+        jQuery('.tools-img4').hide();
+    });
+    jQuery('.tools-card3').hover(function() {
+        jQuery('.tools-img3').show();
+        jQuery('.tools-img1').hide();
+        jQuery('.tools-img2').hide();
+        jQuery('.tools-img4').hide();
+    });
+    jQuery('.tools-card4').hover(function() {
+        jQuery('.tools-img4').show();
+        jQuery('.tools-img1').hide();
+        jQuery('.tools-img2').hide();
+        jQuery('.tools-img3').hide();
+    });
+});

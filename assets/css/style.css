@@ -315,8 +315,8 @@ button.btn.btn-theme-white {
     margin-top: 30px;
 }
 button.btn.btn-theme-white:hover {
-    color: #FC6A55 !important;
-    background-color: #ffffff;
+    color: #ffffff !important;
+    background-color: #FC6A55;
 }
 .business-icons {
     margin: 75px 0 0;
@@ -428,6 +428,55 @@ button.btn.btn-more-white.ripple {
 ==============================================================*/
 
 /*=============================================================
+       product-sec css starts
+==============================================================*/
+section.product-sec {
+    background-color: #F5F5F5;
+}
+.tool-card {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #B1B1B1;
+    border-radius: 8px;
+    position: relative;
+}
+.tool-card-front {
+    padding: 40px 20px;
+    border-radius: 8px;
+    transition: .5s ease;
+}
+.tool-card-front>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+.tool-card-back {
+    padding: 15px 10px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+}
+.tool-card:hover .tool-card-back {
+    opacity: 1;
+}
+.tool-card:hover .tool-card-front {
+    opacity: 0;
+}
+.tools-screenshots>img {
+    width: 100%;
+    box-shadow: 0 10px 13px 0 rgba(44, 43, 43, 0.09);
+}
+/*=============================================================
+       product-sec css ends
+==============================================================*/
+
+/*=============================================================
        business-stratergy css starts
 ==============================================================*/
 .quotes-block {
@@ -500,6 +549,8 @@ img.img-fluid.business-img {
 }
 img.business-img-main {
     width: 100%;
+    box-shadow: 3px 0px 9px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
 }
 /*=============================================================
        business-stratergy css ends
@@ -756,12 +807,22 @@ section.footer-bottom {
     margin: 0;
     line-height: 21px;
 }
+.footer-bottom-block>p>a {
+    color: #959595;
+}
+.footer-bottom-block>p>a:hover {
+    color: #FC6A55;
+}
 ul.social-icons>li {
     display: inline-block;
     padding-left: 15px;
 }
-ul.social-icons>li>a>img {
-    width: 16px;
+ul.social-icons>li>a>i {
+    font-size: 16px;
+    color: #959595;
+}
+ul.social-icons>li>a>i:hover {
+    color: #FC6A55;
 }
 ul.social-icons {
     padding-top: 10px;
