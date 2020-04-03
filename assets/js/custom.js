@@ -22,7 +22,6 @@
 }(jQuery);
 
 
-
 // accordion scipt
 (function() {
 	$(".card").on("show.bs.collapse hide.bs.collapse", function(e) {
@@ -34,7 +33,6 @@
 		}
 	});
 }).call(this);
-
 
 
 // Product (Tools) show/hide scipt

@@ -342,6 +342,9 @@ ul.business-icons>li {
     padding: 0 20px;
     font-size: 12px;
 }
+.div-video-business>iframe {
+    border: 10px solid #ffffff;
+}
 /*=============================================================
         business-process css ends
 ==============================================================*/
@@ -709,6 +712,7 @@ ul.organize-ul>li img {
     text-align: center;
     padding: 30px;
     background-color: #FBFBFB;
+    color: #000000;
 }
 .enquire-div>img {
     width: 40px;
