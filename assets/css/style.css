@@ -53,7 +53,7 @@ img {
     color: #FC6A55 !important;
 }
 .ripple-white:active {
-    background-color: #ffffff;
+    background-color: #FC6A55;
     background-size: 100%;
     transition: background 0s;
 }
@@ -130,8 +130,8 @@ header.masthead .intro-text .intro-heading {
 button.btn.btn-theme {
     font-size: 15px;
     font-weight: bold;
-    color: #ffffff;
-    background-color: #FC6A55;
+    color: #FC6A55;
+    background-color: #ffffff;
     border-radius: 24px;
     padding: 10px 20px;
 }
@@ -223,7 +223,7 @@ button.btn.btn-more:active {
 }
 .btn-explore {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 /*=============================================================
         our-services css ends
@@ -318,6 +318,12 @@ button.btn.btn-theme-white:hover {
     color: #ffffff !important;
     background-color: #FC6A55;
 }
+button.btn.btn-theme-white>span {
+    display: none;
+}
+button.btn.btn-theme-white:hover span {
+    display: inline-block;
+}
 .business-icons {
     margin: 75px 0 0;
     text-align: center;
@@ -375,7 +381,7 @@ ul.business-icons>li {
     margin-top: 50px;
 }
 .industries-card {
-    padding: 25px;
+    padding: 5px;
     margin: 0;
 }
 .card-front>img {
@@ -387,7 +393,7 @@ img.img-fluid.industries-img {
     width: 60px;
     height: 60px;
     border-radius: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding: 5px;
     background-color: #FFD4CD;
     border: 1px solid #FFD4CD;
@@ -410,7 +416,7 @@ button.btn.btn-more-white.ripple {
     border-radius: 24px;
 }
 .industries-card>p {
-    margin: 10px 0px 20px;
+    margin: 5px 0px 10px;
 }
 .card-front {
     transform: rotateY(0deg);

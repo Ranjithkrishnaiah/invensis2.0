@@ -131,6 +131,10 @@ M E D I A  Q U E R I E S
     .tool-card-front {
         padding: 30px 20px;
     }
+    button {
+        font-size: 12px !important;
+        padding: 8px 15px !important;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -164,6 +168,9 @@ M E D I A  Q U E R I E S
     }
     .tools-screenshots {
         margin-top: 155px;
+    }
+    .card.card-flip.card-industries {
+        height: 300px;
     }
 }
 
@@ -261,10 +268,16 @@ M E D I A  Q U E R I E S
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     li.nav-item.last-nav>a {
-        background-color: #FC6A55;
+        color: #FC6A55 !important;
+        background-color: #ffffff;
+        border: 1px solid #FC6A55;
         border-radius: 24px;
         margin-left: 15px;
         padding: 10px 20px !important;
+    }
+    li.nav-item.last-nav>a:hover {
+        color: #ffffff !important;
+        background-color: #FC6A55;
     }
     header.masthead .intro-text {
         padding: 190px 230px 210px;
@@ -283,5 +296,14 @@ M E D I A  Q U E R I E S
     }
     .tools-screenshots {
         padding: 30px 0 0 70px;
+    }
+    .industries-card {
+        padding: 25px;
+    }
+    img.img-fluid.industries-img {
+        margin-bottom: 25px;
+    }
+    .industries-card>p {
+        margin: 10px 0px 20px;
     }
 }
