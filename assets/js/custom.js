@@ -27,7 +27,7 @@
 	$(".card").on("show.bs.collapse hide.bs.collapse", function(e) {
 		if (e.type=='show'){
 		$(this).addClass('active');
-						console.log('ok')
+		console.log('ok')
 		}else{
 		$(this).removeClass('active');
 		}
@@ -65,3 +65,11 @@ jQuery(document).ready(function(){
         jQuery('.tools-img3').hide();
     });
 });
+
+
+// select-box placeholder color scripet
+$("#select-id, #select-id1").change(function () {
+    if($(this).val() == "0") $(this).addClass("empty");
+    else $(this).removeClass("empty")
+});
+$("#select-id, #select-id1").change();
