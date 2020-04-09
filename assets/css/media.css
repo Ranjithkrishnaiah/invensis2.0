@@ -152,6 +152,7 @@ M E D I A  Q U E R I E S
     }
     button.btn.btn-theme-white {
         margin-top: 20px;
+        padding: 10px 10px 10px 20px !important;
     }
     button.btn.btn-theme-white.js-scroll-trigger {
         margin-right: 5px;
@@ -254,7 +255,7 @@ M E D I A  Q U E R I E S
         height: 300px;
     }
     .banner-text {
-        padding: 15% 10% 7% 0;
+        padding: 17% 10% 8% 0;
     }
     ul.navs-services {
         margin: 0 2% 5%;
@@ -264,6 +265,9 @@ M E D I A  Q U E R I E S
     }
     .organize-block {
         background-color: #FBFBFB;
+    }
+    .platform-block {
+        height: 185px;
     }
 }
 
@@ -313,7 +317,7 @@ M E D I A  Q U E R I E S
         padding-left: 20px;
     }
     .banner-text {
-        padding: 15% 30% 7% 0;
+        padding: 17% 30% 8% 0;
     }
     ul.navs-services {
         margin: 0 15% 5%;
@@ -369,6 +373,9 @@ M E D I A  Q U E R I E S
     }
     .enquire-block {
         margin: 0px 50px;
+    }
+    .platform-block {
+        height: 165px;
     }
 }
 
