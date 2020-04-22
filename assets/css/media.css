@@ -419,6 +419,9 @@ M E D I A  Q U E R I E S
     .platform-block {
         height: 165px;
     }
+    .services-stage-block {
+        padding: 0px 85px;
+    }
 }
 
 

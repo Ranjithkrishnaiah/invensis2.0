@@ -951,6 +951,8 @@ section.banner-inner {
 .breadcrumb-ol {
     background-color: transparent;
     font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .breadcrumb-ol>li, .breadcrumb-ol>li>a {
     color: #000000;
@@ -1220,8 +1222,7 @@ section.business-enquire {
     margin-bottom: 50px;
 }
 form.business-enquireForm label {
-    color: #3F3F3F;
-    line-height: 0;
+    color: #54667a9e;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #54667a9e !important;
@@ -1256,10 +1257,6 @@ form.business-enquireForm label {
     border: 1px solid #DBDBDB;
     padding: 0px 5px;
     border-radius: 5px;
-}
-form.business-enquireForm .form-control, form.business-enquireForm .form-control:focus {
-    border: 0;
-    box-shadow: none !important;
 }
 #select-id option {
     color: #000000;
@@ -1461,6 +1458,105 @@ p.para-quotes-lists>i {
     color: #FC6A55;
     margin-right: 5px;
 }
+.services-stage-block {
+    text-align: center;
+}
+.services-stage-block>h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+section.services-tab-sec.section-padding-stage {
+    padding: 50px 0px;
+}
+.service-hd-block {
+    text-align: center;
+}
+.service-hd-block h3 {
+    font-size: 20px;
+    background-color: #F4F1F1;
+    padding: 15px 0px;
+    border-top: 1px solid #979797;
+}
+.service-accordian-stage {
+    border-top: 1px solid #979797;
+    margin-top: 30px;
+}
+form.business-enquireForm .form-control {
+    color: #54667A;
+    border: 1px solid #DBDBDB;
+    box-shadow: none !important;
+    height: 47px;
+    padding: 10.5px 22px;
+}
+.material-textfield textarea {
+    height: 190px !important;
+}
+form.business-enquireForm .form-control:focus {
+    border: 1px solid #DBDBDB;
+    box-shadow: none !important;
+}
+form.business-enquireForm input,select,textarea {
+    color: #54667A;
+    border: 1px solid #DBDBDB;
+    width: 100%;
+}
+.material-textfield {
+    position: relative;
+    margin-top: 10px;
+}
+label {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    transform: translateY(-50%);
+    background-color: white;
+    color: gray;
+    padding: 0 5px;
+    margin: 0 6px;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+}
+input, select, textarea {
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem 0.7rem;
+    color: gray;
+    transition: 0.1s ease-out;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: #3F3F3F;
+}
+input:focus + label, select:focus + label, textarea:focus + label {
+    color: #3F3F3F;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+}
+input:not(:placeholder-shown) + label, textarea:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+}
+/* active state */
+select:focus ~ label, select:valid ~ label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+}
+/* accordian icon */
+.mb-0 > a {
+    display: block;
+    position: relative;
+}
+.mb-0 > a:after {
+    content: "\f078"; /* fa-chevron-down */
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 0;
+}
+.mb-0 > a[aria-expanded="true"]:after {
+    content: "\f077"; /* fa-chevron-up */
+}
+/* accordian icon */
 /*=============================================================
        services page css ends
 ==============================================================*/
