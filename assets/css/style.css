@@ -1465,8 +1465,8 @@ p.para-quotes-lists>i {
     font-size: 26px;
     margin-bottom: 15px;
 }
-section.services-tab-sec.section-padding-stage {
-    padding: 50px 0px;
+.section-padding-stage {
+    padding-top: 50px;
 }
 .service-hd-block {
     text-align: center;
@@ -1542,21 +1542,157 @@ select:focus ~ label, select:valid ~ label {
     top: 0;
     transform: translateY(-50%) scale(.9);
 }
+.accordian-services-header img {
+    width: 18px;
+    height: 18px;
+}
+.accordian-services-header h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+.accordian-services-header h5 a {
+    color: #000000;
+}
+.img-tabing2 {
+    display: none;
+}
+.accordian-services-card {
+    border: 0;
+    border-radius: 0;
+}
+.accordian-services-header {
+    background-color: transparent;
+    border: 0;
+    border-top: 0;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 14px 0px 14px 8px;
+    border-left: 4px solid transparent;
+}
+.accordian-services-header span {
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+.accordian-services-card.active .img-tabing1, .accordian-services-card:hover .img-tabing1 {
+    display: none;
+}
+.accordian-services-card.active .img-tabing2, .accordian-services-card:hover .img-tabing2 {
+    display: inline-block;
+}
+.accordian-services-card.active .accordian-services-header {
+    border-bottom: 1px solid #cdcdcd;
+    border-left: 4px solid #FC6A55;
+    border-radius: 0px;
+}
+.accordian-services-card.active a, .accordian-services-card:hover a {
+    color: #FC6A55;
+}
+.accordian-services-card.active {
+    border-bottom: 1px solid #cdcdcd;
+}
+.accordian-services-card.active h5 {
+    font-weight: 500;
+}
+ul.accordian-services-card-body {
+    margin: 0;
+    padding: 5px 0 10px 24%;
+}
+ul.accordian-services-card-body>li {
+    list-style-type: none;
+    line-height: 26px;
+}
+ul.accordian-services-card-body>li>a {
+    color: #000000 !important;
+}
+ul.accordian-services-card-body>li>a::after {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    color: #838383;
+}
+ul.accordian-services-card-body>li span {
+    font-size: 8px;
+}
+ul.accordian-services-card-body>li.active a, ul.accordian-services-card-body>li:hover a {
+    color: #FC6A55 !important;
+}
+.accordian-card-texts {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.accordian-card-texts h5 {
+    font-size: 18px;
+}
+.accordian-card-texts p {
+    margin-bottom: 20px;
+}
+h5.head-clr-orange {
+    color: #FC6A55;
+    margin-top: 30px;
+}
+p.para-block-acc {
+    background-color: #FFF3F1;
+    padding: 15px 30px;
+}
+.img-services-acc {
+    width: 100%;
+    margin: 30px 0px;
+}
+section.service-stage {
+    padding-bottom: 75px;
+}
 /* accordian icon */
 .mb-0 > a {
     display: block;
     position: relative;
 }
 .mb-0 > a:after {
-    content: "\f078"; /* fa-chevron-down */
+    content: "\f067"; /* fa-chevron-down */
     font-family: 'FontAwesome';
     position: absolute;
     right: 0;
+    top: 5px;
+    font-size: 12px;
 }
-.mb-0 > a[aria-expanded="true"]:after {
-    content: "\f077"; /* fa-chevron-up */
+.accordian-services-card.active h5>a:after {
+    content: "\f068"; /* fa-chevron-up */
 }
 /* accordian icon */
+ul.stage2-services-ul {
+    padding: 0;
+    margin: 0;
+    background-color: #F1F1F1;
+}
+ul.stage2-services-ul>li {
+    list-style-type: none;
+    font-size: 13px;
+    display: inline-block;
+    padding: 10px;
+    width: 32.9%;
+    border-right: 2px solid #ffffff;
+    text-align: center;
+}
+ul.stage2-services-ul>li:first-child {
+    text-align: left;
+}
+ul.stage2-services-ul>li:last-child {
+    border-right: 2px solid transparent;
+}
+ul.stage2-services-ul>li>a {
+    color: #000000;
+}
+ul.stage2-services-ul>li>a:hover {
+    color: #FC6A55;
+}
+ul.stage2-services-ul>li>a>span {
+    margin-left: 5px;
+}
+ul.stage2-services-ul.w-50-per>li {
+    width: 49%;
+    text-align: left;
+}
 /*=============================================================
        services page css ends
 ==============================================================*/

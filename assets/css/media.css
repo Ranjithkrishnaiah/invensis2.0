@@ -237,6 +237,9 @@ M E D I A  Q U E R I E S
     .iframe-abt-services {
         margin-bottom: 30px;
     }
+    ul.stage2-services-ul>li {
+        width: 32%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -295,6 +298,9 @@ M E D I A  Q U E R I E S
     button.btn.btn-theme-white {
         font-size: 14px;
         padding: 5px 5px 5px 15px;
+    }
+    ul.stage2-services-ul>li {
+        width: 32%;
     }
 }
 
