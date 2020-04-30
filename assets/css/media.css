@@ -35,6 +35,9 @@ M E D I A  Q U E R I E S
     h4.stns-head {
         font-size: 16px;
     }
+    .btn-industry-service {
+        margin-top: 0px;
+    }
 }
 
 
@@ -302,6 +305,22 @@ M E D I A  Q U E R I E S
     ul.stage2-services-ul>li {
         width: 32%;
     }
+    ul.industry-service-ul>li {
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+    .btn-industry-service {
+        margin-top: 0px;
+    }
+    .card-industry-body {
+        padding: 10px;
+    }
+    .card-industry-body>h4 {
+        font-size: 14px;
+    }
+    .card-detail-industry {
+        padding: 20px 15px 30px 30px;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -368,6 +387,9 @@ M E D I A  Q U E R I E S
     button.btn.btn-theme-white {
         font-size: 14px;
         padding: 5px 5px 5px 15px;
+    }
+    .btn-industry-service {
+        margin-top: 0px;
     }
 }
 

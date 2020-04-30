@@ -1696,3 +1696,87 @@ ul.stage2-services-ul.w-50-per>li {
 /*=============================================================
        services page css ends
 ==============================================================*/
+
+/*=============================================================
+       industry page css starts
+==============================================================*/
+.card-industry>img {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.card-industry-body {
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+}
+.card-industry-body>img {
+    width: 40px;
+    height: 40px;
+}
+.card-industry-body>h4 {
+    font-size: 20px;
+    color: #FC6A55;
+    margin: 5px 0px 10px;
+}
+.card-industry-body>p {
+    font-size: 12px;
+}
+.industry-service {
+    border: 1px solid #D6D6D6;
+    border-radius: 8px;
+    margin-top: 50px;
+    color: #000000;
+    cursor: pointer;
+}
+.btn-industry-service {
+    text-align: center;
+    margin-top: 50px;
+}
+ul.industry-service-ul {
+    padding: 0;
+}
+ul.industry-service-ul>li {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+ul.industry-service-ul>li::before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    position: absolute;
+    margin-left: -22px;
+}
+.card-detail-industry {
+    padding: 40px 15px 30px 30px;
+    background: linear-gradient(rgba(252, 106, 85, 0.9), 30%, rgba(67, 63, 108, 0.9));
+    border-radius: 4px;
+}
+.industry-carding-hover {
+    padding: 11px;
+    color: #ffffff;
+}
+.btn-industry-service>button {
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
+.industry-carding-hover {
+    padding: 25px 25px 12px;
+    color: #ffffff;
+    position: absolute;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.2s ease;
+}
+.industry-service:hover .industry-carding-hover {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    transition: 0.2s ease;
+}
+/*=============================================================
+       industry page css ends
+==============================================================*/
