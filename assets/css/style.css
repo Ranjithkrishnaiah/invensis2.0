@@ -1777,6 +1777,178 @@ ul.industry-service-ul>li::before {
     transform: translate3d(0, 0, 0) scale(1);
     transition: 0.2s ease;
 }
+/* tabs logistics */
+.nav.tabs-logistics-tabs {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    border-bottom: 0;
+    padding-right: 15px;
+}
+.tabs-logistics-tabs .nav-item {
+    margin-bottom: 0px;
+}
+.tabs-logistics-tabs .nav-link {
+    border: 1px solid #D0D0D0;
+    background: #FCFCFC;
+    border-radius: 0;
+    padding: 30px;
+    width: 120px;
+    transition: 0.2s ease;
+}
+.tabs-logistics-tabs .nav-link:hover {
+    border-color: #D0D0D0;
+}
+.tabs-logistics-tabs .nav-link.active {
+    background-color: #ffffff;
+    border-color: #FC6A55;
+    border-left: 6px solid #FC6A55;
+    width: 135px;
+    box-shadow: 0px 10px 13px 0 rgba(44, 43, 43, 0.09);
+    transition: 0.2s ease;
+}
+.tabs-logistics-content {
+    display: block;
+    background: #FCFCFC;
+    height: 439px;
+    border: 1px solid #D0D0D0;
+}
+.img-logistics-tabs-icon {
+    width: 60px;
+}
+.logi-icon2 {
+    display: none;
+}
+.tabs-logistics-tabs .nav-link.active .logi-icon2 {
+    display: inline-block;
+}
+.tabs-logistics-tabs .nav-link.active .logi-icon1 {
+    display: none;
+}
+.tabs-logistics {
+    margin-top: 80px;
+}
+.tabs-logistics-pane {
+    padding: 40px 10px;
+    margin-left: 26%;
+}
+.tabs-logistics-pane>h4 {
+    font-size: 18px;
+}
+.tabs-logistics-pane>h4 {
+    font-size: 18px;
+}
+.tabs-logistics-pane>h5 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.tabs-logistics-pane>p {
+    border: 1px solid #F9C9C0;
+    padding: 7px 5px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.tabs-logistics-pane>p>i {
+    color: #FC6A55;
+    margin: 0px 5px;
+}
+.tabs-logistics-pane>h6 {
+    font-size: 14px;
+    margin-top: 20px;
+}
+.img-block-logistics {
+    position: relative;
+    margin: -40px 0px 0 -45px;
+    z-index: 0;
+}
+.img-block-logistics>img {
+    width: 100%;
+    border: 1px solid #FC6A55;
+}
+.tabbing-logistics {
+    position: relative;
+    z-index: 1;
+}
+section.bpm-sec {
+    background-color: #F5F5F5;
+}
+.row.row-bpm>div {
+    margin-top: 50px;
+}
+.bpm-card {
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+}
+.bpm-front>img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+.bpm-front>h5 {
+    font-size: 16px;
+}
+.bpm-back>h5 {
+    font-size: 16px;
+}
+.bpm-card>div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #D4D4D4;
+    padding: 30px 10px;
+}
+.bpm-front {
+    transform: rotateY(0deg);
+}
+.bpm-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+.bpm-back>button {
+    color: #FC6A55;
+}
+.bpm-card:hover .bpm-front {
+    transform: rotateY(-180deg);
+}
+.bpm-card:hover .bpm-back {
+    transform: rotateY(0deg);
+    border: 1px solid #FC6A55;
+    box-shadow: 0px 15px 45px -10px rgba(200,203,215,0.5);
+    width: 92%;
+}
+.services-stage-block>h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+img.img-fluid.img-bpm-sec {
+    width: 100%;
+}
+.sec-abt-bpm-sec>h2 {
+    font-size: 24px;
+}
+.lists-bpm>p>i {
+    color: #FC6A55;
+    margin-right: 5px;
+}
+.lists-bpm>p {
+    margin: 25px 0px;
+}
+.sec-abt-bpm-sec .lists-bpm {
+    float: left;
+    width: 50%;
+}
+.btn-bpm-float {
+    float: left;
+    width: 100%;
+}
 /*=============================================================
        industry page css ends
 ==============================================================*/

@@ -38,6 +38,10 @@ M E D I A  Q U E R I E S
     .btn-industry-service {
         margin-top: 0px;
     }
+    .sec-abt-bpm-sec .lists-bpm {
+        float: none;
+        width: 100%;
+    }
 }
 
 
@@ -243,6 +247,39 @@ M E D I A  Q U E R I E S
     ul.stage2-services-ul>li {
         width: 32%;
     }
+    .tabs-logistics-content {
+        height: auto;
+    }
+    .nav.tabs-logistics-tabs {
+        float: none;
+        display: inline-flex;
+        margin-right: 0px;
+        border-bottom: 0;
+        padding-right: 0px;
+    }
+    .tabs-logistics-tabs .nav-link.active {
+        width: auto;
+    }
+    .tabs-logistics-tabs .nav-link {
+        padding: 15px;
+        width: auto;
+    }
+    .img-logistics-tabs-icon {
+        width: 30px;
+    }
+    .tabs-logistics-pane {
+        padding: 30px 20px;
+        margin-left: 0px;
+    }
+    .img-block-logistics {
+        margin: 0px;
+    }
+    .bpm-card>div {
+        padding: 20px 10px;
+    }
+    .row.row-bpm>div {
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -321,6 +358,15 @@ M E D I A  Q U E R I E S
     .card-detail-industry {
         padding: 20px 15px 30px 30px;
     }
+    .img-block-logistics {
+        margin: 0px;
+    }
+    .bpm-card:hover .bpm-back {
+        overflow: hidden;
+    }
+    .bpm-card>div {
+        padding: 20px 10px;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -390,6 +436,12 @@ M E D I A  Q U E R I E S
     }
     .btn-industry-service {
         margin-top: 0px;
+    }
+    .tabs-logistics-content {
+        height: auto;
+    }
+    .img-block-logistics>img {
+        height: 570px;
     }
 }
 
