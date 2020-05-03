@@ -42,6 +42,9 @@ M E D I A  Q U E R I E S
         float: none;
         width: 100%;
     }
+    h3.case-heading::after {
+        width: 100px;
+    }
 }
 
 
@@ -280,6 +283,24 @@ M E D I A  Q U E R I E S
     .row.row-bpm>div {
         margin-top: 30px;
     }
+    h3.case-heading {
+        font-size: 20px;
+        width: 100%;
+        float: none;
+    }
+    ul.case-socialicons {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    ul.casestudy-ul>li, ul.casestudy-ul>a>li {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .footer-case {
+        position: relative;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -367,6 +388,7 @@ M E D I A  Q U E R I E S
     .bpm-card>div {
         padding: 20px 10px;
     }
+
 }
 
 /* Tablet Portrait (devices and browsers)

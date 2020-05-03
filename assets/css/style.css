@@ -1952,3 +1952,259 @@ img.img-fluid.img-bpm-sec {
 /*=============================================================
        industry page css ends
 ==============================================================*/
+
+/*=============================================================
+       resources page css starts
+==============================================================*/
+.left-resources {
+    border-right: 2px solid #BDBDBD;
+}
+form.search-filter-form {
+    display: inline-flex;
+    width: 100%;
+    background-color: #F4F4F4;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.13);
+}
+form.search-filter-form>input {
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    width: 80%;
+}
+form.search-filter-form>button {
+    width: 20%;
+    color: #656565;
+    font-size: 14px;
+    border-radius: 0;
+}
+ul.resources-ullists {
+    padding: 0;
+    margin-top: 20px;
+}
+ul.resources-ullists>a>li {
+    list-style-type: none;
+    color: #000000;
+    padding: 13px 5px;
+    font-size: 16px;
+}
+ul.resources-ullists>a>li>img {
+    width: 23px;
+}
+.resouces-icon2 {
+    display: none;
+}
+ul.resources-ullists>a>li.active {
+    background-color: #FFF0ED;
+    color: #FC6A55;
+    border-right: 4px solid #FC6A55;
+}
+ul.resources-ullists>a>li:hover {
+    color: #FC6A55;
+}
+ul.resources-ullists>a>li.active .resouces-icon1 {
+    display: none;
+}
+ul.resources-ullists>a>li.active .resouces-icon2 {
+    display: inline-block;
+}
+ul.resources-ullists>a>li:hover .resouces-icon1 {
+    display: none;
+}
+ul.resources-ullists>a>li:hover .resouces-icon2 {
+    display: inline-block;
+}
+.popular-solutions {
+    margin-top: 60px;
+}
+.popular-solutions>h4 {
+    font-size: 18px;
+    border-bottom: 1px solid #FC6A55;
+    padding-bottom: 10px;
+}
+ul.pop-solutions-ul {
+    padding: 0;
+}
+ul.pop-solutions-ul>a>li {
+    padding: 10px;
+    list-style-type: none;
+    color: #000000;
+    border-bottom: 1px solid #D5D1D1;
+}
+ul.pop-solutions-ul>a>li.active {
+    color: #FC6A55;
+}
+ul.pop-solutions-ul>a>li:hover {
+    color: #FC6A55;
+}
+.relatedblog-block {
+    padding-bottom: 70px;
+}
+ul.relatedblog-ul {
+    padding: 10px 0px;
+    border-bottom: 1px solid #D5D1D1;
+    margin: 0px;
+    width: 100%;
+    padding-right: 10px;
+}
+ul.relatedblog-ul:hover {
+    background-color: #FFF0ED;
+}
+ul.relatedblog-ul>a>li {
+    list-style-type: none;
+    display: inline-block;
+    color: #000000;
+}
+ul.relatedblog-ul>a>li>p {
+    font-size: 12px;
+    margin: 0px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+ul.relatedblog-ul>a>li>span {
+    font-size: 10px;
+}
+ul.relatedblog-ul>a>li>span>i {
+    margin-right: 3px;
+}
+ul.relatedblog-ul>a>li:first-child {
+    margin-right: 5px;
+    width: 25%;
+}
+ul.relatedblog-ul>a>li:last-child {
+    width: 68%;
+    position: relative;
+    top: 7px;
+}
+h3.case-heading {
+    font-size: 26px;
+    position: relative;
+    width: 50%;
+    float: left;
+}
+h3.case-heading::after {
+    content: '';
+    width: 255px;
+    height: 1px;
+    background-color: #BDBDBD;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 10px;
+}
+ul.case-socialicons {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    text-align: right;
+}
+ul.case-socialicons>a>li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0 5px;
+    color: #AFD388;
+}
+ul.case-socialicons>a>li:hover {
+    color: #FC6A55;
+}
+.follow-btn {
+    margin: 0 !important;
+    padding: 0px 7px !important;
+    font-size: 14px !important;
+    border: 1px solid #AFD388 !important;
+    color: #AFD388 !important;
+}
+.casestudy-div {
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+ul.casestudy-ul {
+    padding: 0;
+    float: left;
+    width: 100%;
+    border: 1px solid #D2D2D2;
+    border-radius: 8px;
+}
+ul.casestudy-ul>li, ul.casestudy-ul>a>li {
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    color: #000000;
+    height: 400px;
+    position: relative;
+}
+li.left-casestudy>img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.popular-badge {
+    margin: 40px 0px 30px;
+}
+.popular-badge>img {
+    float: left;
+}
+.popular-badge>a>p {
+    text-align: right;
+    padding-right: 15px;
+    color: #FC6A55;
+}
+.body-case {
+    padding: 0 15px;
+}
+.body-case>h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+p.left-paracase {
+    float: left;
+}
+p.right-paracase {
+    text-align: right;
+}
+.footer-case {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #D2D2D2;
+}
+p.right-paracase>span {
+    padding-left: 10px;
+}
+p.right-paracase span {
+    color: #000000;
+}
+.footer-case>p {
+    font-size: 12px;
+    padding: 15px 15px 0;
+}
+.footer-case>p>span>i {
+    padding-right: 3px;
+}
+.btn-full {
+    width: 100%;
+    border: 0px !important;
+    background-color: #FC6A55 !important;
+    color: #ffffff !important;
+    border-radius: 0 !important;
+    border-bottom-right-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    padding: 10px 0px !important;
+}
+.bl-0 {
+    border-bottom-left-radius: 0px !important;
+}
+.footer-case button {
+    display: none;
+}
+ul.casestudy-ul:hover .footer-case>p {
+    display: none;
+}
+ul.casestudy-ul:hover .btn-full {
+    display: block;
+}
+/*=============================================================
+       resources page css ends
+==============================================================*/
