@@ -388,7 +388,17 @@ M E D I A  Q U E R I E S
     .bpm-card>div {
         padding: 20px 10px;
     }
-
+    ul.casestudy-ul>li, ul.casestudy-ul>a>li {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .footer-case {
+        position: relative;
+    }
+    .body-case>h4 {
+        height: auto;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)

@@ -2115,8 +2115,7 @@ ul.case-socialicons>a>li:hover {
     color: #AFD388 !important;
 }
 .casestudy-div {
-    float: left;
-    width: 100%;
+    display: inline-flex;
     margin-top: 30px;
 }
 ul.casestudy-ul {
@@ -2143,10 +2142,10 @@ li.left-casestudy>img {
 .popular-badge {
     margin: 40px 0px 30px;
 }
-.popular-badge>img {
+.popular-badge img {
     float: left;
 }
-.popular-badge>a>p {
+.popular-badge p {
     text-align: right;
     padding-right: 15px;
     color: #FC6A55;
@@ -2157,6 +2156,7 @@ li.left-casestudy>img {
 .body-case>h4 {
     font-size: 18px;
     margin-bottom: 15px;
+    height: 43px;
 }
 p.left-paracase {
     float: left;
@@ -2204,6 +2204,52 @@ ul.casestudy-ul:hover .footer-case>p {
 }
 ul.casestudy-ul:hover .btn-full {
     display: block;
+}
+ul.casestudy-ul:hover {
+    box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.27);
+    border: 0;
+}
+ul.casestudy-ul:hover h4 {
+    color: #FC6A55;
+}
+.cadestudy-block>img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.cadestudy-block .popular-badge {
+    margin: 10px 0px;
+}
+.cadestudy-block .footer-case {
+    position: relative;
+}
+.cadestudy-block {
+    border: 1px solid #D2D2D2;
+    border-radius: 8px;
+    color: #000000;
+    margin-top: 30px;
+}
+.cadestudy-block:hover {
+    box-shadow: 0px 9px 12px 0px rgba(0, 0, 0, 0.27);
+    border: 0;
+}
+.cadestudy-block:hover h4 {
+    color: #FC6A55;
+}
+.cadestudy-block:hover .footer-case>p {
+    display: none;
+}
+.cadestudy-block:hover .btn-full {
+    display: block;
+}
+.casestudy-bgimg {
+    margin: 60px 0px;
+}
+.casestudy-bgimg>img {
+    width: 100%;
+}
+.row.casestudy-div2 {
+    display: inline-flex;
 }
 /*=============================================================
        resources page css ends
