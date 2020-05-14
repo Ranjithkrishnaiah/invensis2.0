@@ -301,6 +301,25 @@ M E D I A  Q U E R I E S
     .footer-case {
         position: relative;
     }
+    li.nav-item.last-nav>a {
+        padding: 10px !important;
+    }
+    .clients-scroll-block {
+        padding: 40px 30px;
+        margin: 0px;
+    }
+    .col.owl-carousel-home {
+        padding: 0;
+    }
+    header.masthead {
+        height: 580px;
+    }
+    .go-top {
+        right: 1em;
+    }
+    .particle-text {
+        top: 270px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -399,6 +418,9 @@ M E D I A  Q U E R I E S
     .body-case>h4 {
         height: auto;
     }
+    li.nav-item.last-nav>a {
+        padding: 10px !important;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -408,16 +430,15 @@ M E D I A  Q U E R I E S
         background-color: transparent;
         color: #ffffff !important;
         border: 1px solid #ffffff;
-        border-radius: 18px;
         margin-left: 10px;
     }
     li.nav-item.last-nav>a:hover {
         background-color: #FC6A55;
         border: 1px solid #FC6A55;
     }
-    header.masthead .intro-text {
+    /* header.masthead .intro-text {
         padding: 150px 170px 200px;
-    }
+    } */
     .video-business {
         padding: 0px 200px;
     }
@@ -475,6 +496,9 @@ M E D I A  Q U E R I E S
     .img-block-logistics>img {
         height: 570px;
     }
+    .particle-text {
+        width: 65%;
+    }
 }
 
 @media (max-width: 992px) {
@@ -490,6 +514,9 @@ M E D I A  Q U E R I E S
     .banner-text.full-width-services-text {
         padding-right: 0;
         padding-left: 0;
+    }
+    .particle-text {
+        width: 90%;
     }
 }
 
@@ -543,18 +570,16 @@ M E D I A  Q U E R I E S
         color: #ffffff !important;
         background-color: transparent;
         border: 1px solid #ffffff;
-        border-radius: 24px;
         margin-left: 15px;
-        padding: 10px 20px !important;
     }
     li.nav-item.last-nav>a:hover {
         color: #ffffff !important;
         background-color: #FC6A55;
         border: 1px solid #FC6A55;
     }
-    header.masthead .intro-text {
+    /* header.masthead .intro-text {
         padding: 190px 230px 210px;
-    }
+    } */
     #mainNav .navbar-nav .nav-item .nav-link {
         padding: 10px 15px;
     }

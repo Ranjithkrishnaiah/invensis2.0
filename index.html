@@ -14,7 +14,10 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/media.css" rel="stylesheet">
+	<link href="assets/css/media.css" rel="stylesheet">
+	<!-- owl.carousel css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 </head>
 <body>
 	<!-- Navigation starts -->
@@ -53,7 +56,7 @@
 				<a class="nav-link js-scroll-trigger" href="#search"><i class="fa fa-search" aria-hidden="true"></i></a>
 			  </li>
 			  <li class="nav-item last-nav">
-				<a class="nav-link js-scroll-trigger ripple" href="#">CONTACT US</a>
+				<a class="nav-link js-scroll-trigger ripple" href="#">CONTACT US <span>&#10230;</span></a>
 			  </li>
 			</ul>
 		  </div>
@@ -63,12 +66,15 @@
 
 	<!-- Banner starts -->
 	<header class="masthead">
-		<div class="container">
+		<!-- particles.js container -->
+		<div id="particles-js"></div>
+		<!-- particles.js text -->
+		<div class="particle-text">
 			<div class="intro-text">
-			<div class="intro-lead-in">Saving way for <br> Customer Excellence Through</div>
-			<div class="intro-heading text-uppercase">BUSINESS PROCESS TRANSFORMATION</div>
-			<div class="intro-medium">Transformation that aligns <b>People, Process</b> and <b>Technology</b> with business strategy</div>
-			<button class="btn btn-theme-white js-scroll-trigger ripple" style="margin-top: 30px;">Get a Quote <span>&#10230;</span></button>
+				<div class="intro-lead-in">Saving way for <br> Customer Excellence Through</div>
+				<div class="intro-heading text-uppercase">BUSINESS PROCESS TRANSFORMATION</div>
+				<div class="intro-medium">Transformation that aligns <b>People, Process</b> and <b>Technology</b> with business <br class="d-none d-lg-block"> strategy</div>
+				<button class="btn btn-theme-white js-scroll-trigger ripple" style="margin-top: 30px;">Get a Quote <span>&#10230;</span></button>
 			</div>
 		</div>
 	</header>
@@ -77,23 +83,39 @@
 	<!-- home-clients starts -->
 	<section class="home-clients">
 		<div class="container">
-			<div class="d-flex flex-wrap justify-content-around home-clients-block">
-				<div>
-					<img src="https://via.placeholder.com/100x60" alt="client">
-				</div>
-				<div>
-					<img src="https://via.placeholder.com/100x60" alt="client">
-				</div>
-				<div>
-					<img src="https://via.placeholder.com/100x60" alt="client">
-				</div>
-				<div>
-					<img src="https://via.placeholder.com/100x60" alt="client">
-				</div>
-				<div>
-					<img src="https://via.placeholder.com/100x60" alt="client">
+			<!-- owl-carousel -->
+			<div class="col owl-carousel-home">
+				<div class="clients-scroll-block">
+					<div class="owl-carousel owl-theme carousel-clients-home">
+						<div class="owl-item">
+							<div class="clients-block">
+								<img src="https://via.placeholder.com/100x60" alt="client" class="img-fluid">
+							</div>
+						</div>
+						<div class="owl-item">
+							<div class="clients-block">
+								<img src="https://via.placeholder.com/100x60" alt="client" class="img-fluid">
+							</div>
+						</div>
+						<div class="owl-item">
+							<div class="clients-block">
+								<img src="https://via.placeholder.com/100x60" alt="client" class="img-fluid">
+							</div>
+						</div>
+						<div class="owl-item">
+							<div class="clients-block">
+								<img src="https://via.placeholder.com/100x60" alt="client" class="img-fluid">
+							</div>
+						</div>
+						<div class="owl-item">
+							<div class="clients-block">
+								<img src="https://via.placeholder.com/100x60" alt="client" class="img-fluid">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+			<!-- owl-carousel -->
 		</div>
 	</section>
 	<!-- home-clients ends -->
@@ -221,27 +243,27 @@
 			<ul class="business-icons">
 				<li class="business-block">
 					<img src="assets/images/Facts & figures_Customer Service-02.svg" alt="business-icon">
-					<h4>5840+</h4>
+					<h4><span data-toggle="counter-up">5840</span>+</h4>
 					<p>Days of customer service delivered</p>
 				</li>
 				<li class="business-block">
 					<img src="assets/images/Facts & figures_Customer Experience.svg" alt="business-icon">
-					<h4>6900+</h4>
+					<h4><span data-toggle="counter-up">6900</span>+</h4>
 					<p>average days of experience of a SME in customer experience</p>
 				</li>
 				<li class="business-block">
 					<img src="assets/images/Facts & figures_Business process.svg" alt="business-icon">
-					<h4>150+</h4>
+					<h4><span data-toggle="counter-up">150</span>+</h4>
 					<p>business processes streamlined across industries</p>
 				</li>
 				<li class="business-block">
 					<img src="assets/images/Facts & figures_Customer Focused.svg" alt="business-icon">
-					<h4>2500+</h4>
+					<h4><span data-toggle="counter-up">2500</span>+</h4>
 					<p>Customer-focused <br class="visible-lg"> employees</p>
 				</li>
 				<li class="business-block">
 					<img src="assets/images/Facts & figures_Cumulative Years.svg" alt="business-icon">
-					<h4>100+</h4>
+					<h4><span data-toggle="counter-up">100</span>+</h4>
 					<p>cumulative years of customer service leadership</p>
 				</li>
 			</ul>
@@ -575,7 +597,7 @@
 										<div class="resources-blog">
 											<div class="resource-rel">
 												<img src="https://via.placeholder.com/300x90" alt="img" class="img-fluid img-resources-blog">
-												<img src="assets/images/word.png" alt="img" class="img-resources-blog-icon">
+												<img src="assets/images/pdf.png" alt="img" class="img-resources-blog-icon">
 											</div>
 											<div class="bloger-body">
 												<h6>How Real Time Eligibility Verification Helps to Maximize Revenues ?</h6>
@@ -590,7 +612,7 @@
 											<div class="resource-rel">
 												<img src="https://via.placeholder.com/300x90" alt="img" class="img-fluid img-resources-blog">
 												<img src="assets/images/pdf.png" alt="img" class="img-resources-blog-icon">
-												<img src="assets/images/word.png" alt="img" class="img-resources-blog-icon word-blog-icon">
+												<!-- <img src="assets/images/word.png" alt="img" class="img-resources-blog-icon word-blog-icon"> -->
 											</div>
 											<div class="bloger-body">
 												<h6>Importance of Insurance Eligibility Verification Process</h6>
@@ -626,7 +648,7 @@
 										<div class="resources-blog">
 											<div class="resource-rel">
 												<img src="https://via.placeholder.com/300x90" alt="img" class="img-fluid img-resources-blog">
-												<img src="assets/images/word.png" alt="img" class="img-resources-blog-icon">
+												<img src="assets/images/pdf.png" alt="img" class="img-resources-blog-icon">
 											</div>
 											<div class="bloger-body">
 												<h6>How Real Time Eligibility Verification Helps to Maximize Revenues ?</h6>
@@ -641,7 +663,7 @@
 											<div class="resource-rel">
 												<img src="https://via.placeholder.com/300x90" alt="img" class="img-fluid img-resources-blog">
 												<img src="assets/images/pdf.png" alt="img" class="img-resources-blog-icon">
-												<img src="assets/images/word.png" alt="img" class="img-resources-blog-icon word-blog-icon">
+												<!-- <img src="assets/images/word.png" alt="img" class="img-resources-blog-icon word-blog-icon"> -->
 											</div>
 											<div class="bloger-body">
 												<h6>Importance of Insurance Eligibility Verification Process</h6>
@@ -677,7 +699,7 @@
 										<div class="resources-blog">
 											<div class="resource-rel">
 												<img src="https://via.placeholder.com/300x90" alt="img" class="img-fluid img-resources-blog">
-												<img src="assets/images/word.png" alt="img" class="img-resources-blog-icon">
+												<img src="assets/images/pdf.png" alt="img" class="img-resources-blog-icon">
 											</div>
 											<div class="bloger-body">
 												<h6>How Real Time Eligibility Verification Helps to Maximize Revenues ?</h6>
@@ -692,7 +714,7 @@
 											<div class="resource-rel">
 												<img src="https://via.placeholder.com/300x90" alt="img" class="img-fluid img-resources-blog">
 												<img src="assets/images/pdf.png" alt="img" class="img-resources-blog-icon">
-												<img src="assets/images/word.png" alt="img" class="img-resources-blog-icon word-blog-icon">
+												<!-- <img src="assets/images/word.png" alt="img" class="img-resources-blog-icon word-blog-icon"> -->
 											</div>
 											<div class="bloger-body">
 												<h6>Importance of Insurance Eligibility Verification Process</h6>
@@ -728,7 +750,7 @@
 										<div class="resources-blog">
 											<div class="resource-rel">
 												<img src="https://via.placeholder.com/300x90" alt="img" class="img-fluid img-resources-blog">
-												<img src="assets/images/word.png" alt="img" class="img-resources-blog-icon">
+												<img src="assets/images/pdf.png" alt="img" class="img-resources-blog-icon">
 											</div>
 											<div class="bloger-body">
 												<h6>How Real Time Eligibility Verification Helps to Maximize Revenues ?</h6>
@@ -743,7 +765,7 @@
 											<div class="resource-rel">
 												<img src="https://via.placeholder.com/300x90" alt="img" class="img-fluid img-resources-blog">
 												<img src="assets/images/pdf.png" alt="img" class="img-resources-blog-icon">
-												<img src="assets/images/word.png" alt="img" class="img-resources-blog-icon word-blog-icon">
+												<!-- <img src="assets/images/word.png" alt="img" class="img-resources-blog-icon word-blog-icon"> -->
 											</div>
 											<div class="bloger-body">
 												<h6>Importance of Insurance Eligibility Verification Process</h6>
@@ -950,6 +972,10 @@
 	</section>
 	<!-- footer-bottom ends -->
 
+	<!-- scroll to top starts -->
+    <a href="#" class="go-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+	<!-- scroll to top ends -->
+
     <!-- Bootstrap core JavaScript -->
     <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -957,5 +983,169 @@
 	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<!-- custom JavaScript -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
+	<!-- owl.carousel JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+	<!-- owl.carousel for Clients section script -->
+	<script>
+	$(document).ready(function() {
+		if ($('.carousel-clients-home').length) {
+			var viewedSlider = $('.carousel-clients-home');
+			viewedSlider.owlCarousel({
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 5000,
+				nav: false,
+				dots: false,
+				responsive: {
+					0: {
+						items: 2,
+						margin: 80
+					},
+					575: {
+						items: 3,
+						margin: 80
+					},
+					768: {
+						items: 4,
+						margin: 30
+					},
+					991: {
+						items: 5,
+						margin: 60
+					},
+					1199: {
+						items: 5,
+						margin: 100
+					}
+				}
+			});
+		}
+	})
+	</script>
+	<!-- particles.js  -->
+	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+	particlesJS("particles-js", {
+		"particles": {
+			"number": {
+				"value": 90,
+				"density": {
+					"enable": true,
+					"value_area": 800
+				}
+			},
+			"color": {
+				"value": "#ffffff"
+			},
+			"shape": {
+				"type": "circle",
+				"stroke": {
+					"width": 0,
+					"color": "#000000"
+				},
+				"polygon": {
+					"nb_sides": 5
+				},
+				"image": {
+					"src": "img/github.svg",
+					"width": 100,
+					"height": 100
+				}
+			},
+			"opacity": {
+				"value": 0.5,
+				"random": false,
+				"anim": {
+					"enable": false,
+					"speed": 1,
+					"opacity_min": 0.1,
+					"sync": false
+				}
+			},
+			"size": {
+				"value": 4,
+				"random": true,
+				"anim": {
+					"enable": false,
+					"speed": 40,
+					"size_min": 0.1,
+					"sync": false
+				}
+			},
+			"line_linked": {
+				"enable": true,
+				"distance": 150,
+				"color": "#ffffff",
+				"opacity": 0.4,
+				"width": 2
+			},
+			"move": {
+				"enable": true,
+				"speed": 6,
+				"direction": "none",
+				"random": false,
+				"straight": false,
+				"out_mode": "out",
+				"bounce": false,
+				"attract": {
+					"enable": false,
+					"rotateX": 600,
+					"rotateY": 1200
+				}
+			}
+		},
+		"interactivity": {
+			"detect_on": "canvas",
+			"events": {
+				"onhover": {
+					"enable": true,
+					"mode": "repulse"
+				},
+				"onclick": {
+					"enable": true,
+					"mode": "push"
+				},
+				"resize": true
+			},
+			"modes": {
+				"grab": {
+					"distance": 400,
+					"line_linked": {
+						"opacity": 1
+					}
+				},
+				"bubble": {
+					"distance": 400,
+					"size": 40,
+					"duration": 2,
+					"opacity": 8,
+					"speed": 3
+				},
+				"repulse": {
+					"distance": 200,
+					"duration": 0.4
+				},
+				"push": {
+					"particles_nb": 4
+				},
+				"remove": {
+					"particles_nb": 2
+				}
+			}
+		},
+		"retina_detect": true
+	});
+	</script>
+	<!-- counter-up js -->
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<script src="assets/js/counterup.min.js"></script>
+	<script>
+	$('[data-toggle="counter-up"]').counterUp({
+		delay: 10,
+		time: 1000
+	});
+	</script>
 </body>
 </html>

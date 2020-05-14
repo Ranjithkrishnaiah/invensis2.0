@@ -1,0 +1,14 @@
+https://www.jqueryscript.net/tags.php?/mobile%20menu/
+
+//animate.css
+https://animate.style/
+
+//aos css
+https://codepen.io/michalsnik/pen/WxNdvq
+
+//aos animation and jquery counter number
+https://bootstrapmade.com/demo/Techie/
+https://bootstrapmade.com/demo/NewBiz/
+
+//particle
+http://abcgomel.ru/haswell/one-page-index7.html

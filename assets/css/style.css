@@ -61,10 +61,10 @@ img {
         navigation & header css starts
 ==============================================================*/
 #mainNav {
-	background-color: #082747
+	background-color: #082747;
 }
 #mainNav.navbar-shrink {
-    background-color: #082747;
+    background-color: #010c41;
 }
 #mainNav .navbar-brand {
 	color: #FC6A55;
@@ -86,7 +86,7 @@ img {
 li.nav-item.active> a.nav-link {
     color: #FC6A55 !important;
 }
-header.masthead {
+/* header.masthead {
 	text-align: center;
 	color: #ffffff;
 	background-image: url(../images/main-banner.jpg);
@@ -94,7 +94,7 @@ header.masthead {
 	background-attachment: scroll;
 	background-position: center center;
 	background-size: cover
-}
+} */
 img.img-fluid.img-logo {
     width: 145px;
     height: auto;
@@ -102,6 +102,22 @@ img.img-fluid.img-logo {
 #mainNav .navbar-nav .nav-item.last-nav .nav-link.active,
 #mainNav .navbar-nav .nav-item.last-nav .nav-link:hover {
 	color: #ffffff;
+}
+li.nav-item.last-nav>a {
+    padding: 10px 10px 10px 25px !important;
+    border-radius: 24px;
+}
+li.nav-item.last-nav span {
+    position: relative;
+    opacity: 0;
+    right: 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+li.nav-item.last-nav:hover span {
+    opacity: 1;
+    right: 0px;
+    transition: all 0.3s;
 }
 /*=============================================================
         navigation & header css ends
@@ -159,9 +175,9 @@ img.img-fluid.img-logo {
 /*=============================================================
         main-banner css starts
 ==============================================================*/
-header.masthead .intro-text {
+/* header.masthead .intro-text {
     padding: 150px 0px 200px;
-}
+} */
 header.masthead .intro-text .intro-lead-in {
     font-size: 30px;
     line-height: 36px;
@@ -184,6 +200,31 @@ button.btn.btn-theme {
     border-radius: 24px;
     padding: 10px 20px;
 }
+/* particle.js css */
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+}
+header.masthead {
+    height: 680px;
+}
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #000934;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.particle-text {
+    position: absolute;
+    top: 330px;
+    right: 50%;
+    transform: translate(50%,-50%);
+    color: #ffffff;
+    text-align: center;
+}
 /*=============================================================
         main-banner css ends
 ==============================================================*/
@@ -199,6 +240,13 @@ section.home-clients {
     background-color: #ffffff;
     border: 1px solid rgba(236, 235, 237, 0);
     box-shadow: 0px 16px 52px 0px rgba(44, 43, 43, 0.2);
+}
+.clients-scroll-block {
+    padding: 40px 45px;
+    background-color: #ffffff;
+    border: 1px solid rgba(236, 235, 237, 0);
+    box-shadow: 0px 16px 52px 0px rgba(44, 43, 43, 0.2);
+    margin: 0px 35px;
 }
 /*=============================================================
         home-clients css ends
@@ -386,6 +434,9 @@ button.btn.btn-theme-white:hover span {
     right: 0px;
     transition: all 0.3s;
 }
+.intro-text button {
+    margin-right: 0px !important;
+}
 .business-icons {
     margin: 75px 0 0;
     text-align: center;
@@ -434,6 +485,10 @@ ul.business-icons>li {
 .card-back {
     border: 1px solid #FC6A55;
     border-radius: 8px;
+    background: url(../images/products-hover-image.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .card-front {
     border-radius: 8px;
@@ -535,6 +590,10 @@ section.product-sec {
     left: 0;
     right: 0;
     opacity: 0;
+    background: url(../images/products-hover-image.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     transition: .5s ease;
 }
 .tool-card:hover .tool-card-back {
@@ -918,12 +977,41 @@ ul.social-icons {
 ==============================================================*/
 
 /*=============================================================
+        scroll to top css starts
+==============================================================*/
+.go-top {
+    position: fixed;
+    bottom: 4em;
+    right: 3em;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #FC6A55;
+    box-shadow: 0px 0px 3px #FC6A55;
+    font-size: 16px;
+    display: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 2.5;
+    text-align: center;
+    z-index: 1020;
+}
+.go-top:hover, .go-top:focus {
+  background-color: #FC6A55;
+  color: white;
+}
+/*=============================================================
+        scroll to top css ends
+==============================================================*/
+
+/*=============================================================
        services page css starts
 ==============================================================*/
 section.banner-inner {
     text-align: left;
     color: #ffffff;
     background-image: url(../images/main-banner.jpg);
+    /* background-color: #000934; */
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -1513,7 +1601,7 @@ label {
     color: gray;
     padding: 0 5px;
     margin: 0 6px;
-    transition: .1s ease-out;
+    transition: .2s ease-out;
     transform-origin: left top;
     pointer-events: none;
 }

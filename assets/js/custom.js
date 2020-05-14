@@ -16,7 +16,7 @@
     });
 
     function a() {
-        80 < e("#mainNav").offset().top ? e("#mainNav").addClass("navbar-shrink") : e("#mainNav").removeClass("navbar-shrink")
+        10 < e("#mainNav").offset().top ? e("#mainNav").addClass("navbar-shrink") : e("#mainNav").removeClass("navbar-shrink")
     }
     a(), e(window).scroll(a)
 }(jQuery);
@@ -116,4 +116,23 @@ subToggle.on("click", function() {
 // Hide submenu
 subHideToggle.on("click", function() {
   nav.removeClass('view-submenu');
+});
+
+
+// scroll to top script
+$(document).ready(function() {
+    // Show or hide the sticky footer button
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 2000) {
+        $('.go-top').fadeIn(200);
+      } else {
+        $('.go-top').fadeOut(200);
+      }
+    });
+
+    // Animate the scroll to top
+    $('.go-top').click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({scrollTop: 0}, 1000);
+    })
 });
