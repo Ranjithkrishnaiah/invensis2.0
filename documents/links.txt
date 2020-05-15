@@ -1,5 +1,3 @@
-https://www.jqueryscript.net/tags.php?/mobile%20menu/
-
 //animate.css
 https://animate.style/
 
@@ -12,3 +10,9 @@ https://bootstrapmade.com/demo/NewBiz/
 
 //particle
 http://abcgomel.ru/haswell/one-page-index7.html
+
+//mobile menu navigation
+https://codepen.io/michaelmov/pen/ORpkkX
+https://codepen.io/brouxhaha/pen/itsuw
+https://www.jqueryscript.net/tags.php?/mobile%20menu/
+https://tympanus.net/codrops/2013/04/19/responsive-multi-level-menu/
