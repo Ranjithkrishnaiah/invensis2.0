@@ -12,6 +12,8 @@ https://bootstrapmade.com/demo/NewBiz/
 http://abcgomel.ru/haswell/one-page-index7.html
 
 //mobile menu navigation
+https://www.jqueryscript.net/menu/jQuery-Responsive-Multi-Level-Menu-Plugin-Dlmenu.html(dl menu jquery)
+https://xvelopers.com/html/avalon/index.html(dl menu jquery)
 https://codepen.io/michaelmov/pen/ORpkkX
 https://codepen.io/brouxhaha/pen/itsuw
 https://www.jqueryscript.net/tags.php?/mobile%20menu/

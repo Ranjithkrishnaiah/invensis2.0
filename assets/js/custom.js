@@ -1,25 +1,32 @@
 // navbar fixed on top script
-! function(e) {
-    "use strict";
-    e('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
-            var a = e(this.hash);
-            if ((a = a.length ? a : e("[name=" + this.hash.slice(1) + "]")).length) return e("html, body").animate({
-                scrollTop: a.offset().top - 54
-            }, 1e3, "easeInOutExpo"), !1
-        }
-    }), e(".js-scroll-trigger").click(function() {
-        e(".navbar-collapse").collapse("hide")
-    }), e("body").scrollspy({
-        target: "#mainNav",
-        offset: 56
-    });
+!(function($) {
+  "use strict";
 
-    function a() {
-        10 < e("#mainNav").offset().top ? e("#mainNav").addClass("navbar-shrink") : e("#mainNav").removeClass("navbar-shrink")
+  // Toggle .navbar-shrink class to #header when page is scrolled
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+      $('#mainNav').addClass('navbar-shrink');
+    } else {
+      $('#mainNav').removeClass('navbar-shrink');
     }
-    a(), e(window).scroll(a)
-}(jQuery);
+  });
+
+  if ($(window).scrollTop() > 50) {
+    $('#header').addClass('navbar-shrink');
+  }
+
+})(jQuery);
+
+
+// search full screen
+$(document).ready(function() {
+  $(".ser-input").click(function() {
+      $('.search-full-view').addClass("search-normal-screen");
+  });
+  $("#search-close").click(function() {
+      $('.search-full-view').removeClass("search-normal-screen");
+  });
+});
 
 
 // accordion scipt
@@ -73,50 +80,6 @@ $("#select-id, #select-id1").change(function () {
     else $(this).removeClass("empty")
 });
 $("#select-id, #select-id1").change();
-
-
-
-var nav           = $('nav');
-var menu          = $('.menu');
-var menuContainer = $('.menu-container');
-var subMenu       = $('.submenu');
-var toggle        = $('.toggle');
-var subToggle     = $('.has-children span');
-var back          = '<div class="hide-submenu"></div>';
-var subHide       = $(back);
-
-// Toggle menu
-toggle.on("click", function() {
-  nav.toggleClass('is-visible');
-  if(menu.hasClass('visually-hidden')) {
-    menu.toggleClass('visually-hidden is-visible')
-  } else {
-    menu.removeClass('is-visible');
-    // Wait for CSS animation
-    setTimeout(function() {
-      nav.removeClass('view-submenu');
-      menu.addClass('visually-hidden');
-    }, 200);
-  }
-});
-
-// Add submenu hide bar
-subHide.prependTo(subMenu);
-var subHideToggle = $('.hide-submenu');
-
-// Show submenu
-subToggle.on("click", function() {
-  nav.addClass('view-submenu');
-  // Hide all the submenus...
-  subMenu.hide();
-  // ...except for the one being called
-  $(this).parents('li').find('.submenu').show();
-});
-
-// Hide submenu
-subHideToggle.on("click", function() {
-  nav.removeClass('view-submenu');
-});
 
 
 // scroll to top script

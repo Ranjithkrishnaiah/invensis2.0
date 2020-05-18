@@ -320,6 +320,12 @@ M E D I A  Q U E R I E S
     .particle-text {
         top: 270px;
     }
+    .search-full-view .input-group .form-control {
+        font-size: 20px;
+    }
+    .search-full-view .input-group {
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -436,9 +442,6 @@ M E D I A  Q U E R I E S
         background-color: #FC6A55;
         border: 1px solid #FC6A55;
     }
-    /* header.masthead .intro-text {
-        padding: 150px 170px 200px;
-    } */
     .video-business {
         padding: 0px 200px;
     }
@@ -483,10 +486,6 @@ M E D I A  Q U E R I E S
     .solutions-tab-body p {
         height: 60px;
     }
-    button.btn.btn-theme-white {
-        font-size: 14px;
-        padding: 5px 5px 5px 15px;
-    }
     .btn-industry-service {
         margin-top: 0px;
     }
@@ -498,6 +497,14 @@ M E D I A  Q U E R I E S
     }
     .particle-text {
         width: 65%;
+    }
+    ul.submenu-ul {
+        top: 53px !important;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        padding: 5px 9px 20px;
+        position: relative;
+        top: 6px;
     }
 }
 
@@ -518,6 +525,12 @@ M E D I A  Q U E R I E S
     .particle-text {
         width: 90%;
     }
+    img.logo-white {
+        display: none;
+    }
+    ul.submenu-ul {
+        display: none;
+    }
 }
 
 
@@ -529,16 +542,59 @@ M E D I A  Q U E R I E S
         transition: padding-top .3s, padding-bottom .3s;
         border: none;
         background-color: transparent;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
     #mainNav .navbar-brand {
         transition: all .3s;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
     #mainNav.navbar-shrink {
         padding-top: 0;
         padding-bottom: 0;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
     #mainNav.navbar-shrink .navbar-brand {
         padding: 12px 0;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+        color: #000000;
+    }
+    #mainNav.navbar-shrink li.nav-item.last-nav>a {
+        color: #000000 !important;
+        border: 1px solid #000000;
+    }
+    #mainNav.navbar-shrink li.nav-item.last-nav>a:hover {
+        color: #ffffff !important;
+        border: 1px solid #FC6A55;
+    }
+    img.logo-black {
+        display: none;
+    }
+    #mainNav.navbar-shrink img.logo-black {
+        display: block;
+    }
+    #mainNav.navbar-shrink img.logo-white {
+        display: none;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        color: #ffffff;
     }
     .services-body {
         height: 112px;
@@ -561,6 +617,9 @@ M E D I A  Q U E R I E S
     .services-stage-block {
         padding: 0px 85px;
     }
+    a.search-mobile-icon {
+        display: none;
+    }
 }
 
 
@@ -577,11 +636,10 @@ M E D I A  Q U E R I E S
         background-color: #FC6A55;
         border: 1px solid #FC6A55;
     }
-    /* header.masthead .intro-text {
-        padding: 190px 230px 210px;
-    } */
     #mainNav .navbar-nav .nav-item .nav-link {
-        padding: 10px 15px;
+        padding: 5px 15px 21px;
+        position: relative;
+        top: 7px;
     }
     .video-business {
         padding: 0px 300px;
