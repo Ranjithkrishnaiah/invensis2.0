@@ -45,6 +45,10 @@ M E D I A  Q U E R I E S
     h3.case-heading::after {
         width: 100px;
     }
+    li.cont-li1 button.btn.btn-theme-white {
+        font-size: 11px !important;
+        padding: 5px 0px 5px 13px !important;
+    }
 }
 
 
@@ -326,6 +330,12 @@ M E D I A  Q U E R I E S
     .search-full-view .input-group {
         width: 90%;
     }
+    li.cont-li1>h4 {
+        font-size: 16px;
+    }
+    li.cont-li1>p {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -427,6 +437,16 @@ M E D I A  Q U E R I E S
     li.nav-item.last-nav>a {
         padding: 10px !important;
     }
+    li.cont-li1>h4 {
+        font-size: 20px;
+    }
+    li.cont-li1>p {
+        font-size: 14px;
+    }
+    li.cont-li1 button.btn.btn-theme-white {
+        padding: 10px 20px 10px 35px;
+        font-size: 14px !important;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -498,13 +518,13 @@ M E D I A  Q U E R I E S
     .particle-text {
         width: 65%;
     }
-    ul.submenu-ul {
-        top: 53px !important;
-    }
     #mainNav .navbar-nav .nav-item .nav-link {
         padding: 5px 9px 20px;
         position: relative;
         top: 6px;
+    }
+    .submenucol-video {
+        height: 390px;
     }
 }
 
@@ -528,8 +548,78 @@ M E D I A  Q U E R I E S
     img.logo-white {
         display: none;
     }
-    ul.submenu-ul {
+    .submenu-ul {
         display: none;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+        padding: 16px 15px 16px 75px;
+    }
+    #mainNav .navbar-nav>li>a::before {
+        content: url(../images/Black_IT\ Service.svg);
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 15px;
+        background-color: #E3E3E3;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: -3px;
+    }
+    a.nav-link span {
+        float: right;
+        font-size: 20px;
+    }
+    ul.navbar-nav {
+        border-top: 3px solid #E3E3E3;
+        margin-top: 7px;
+    }
+    ul.navbar-nav>li {
+        border-bottom: 1px solid #E3E3E3;
+    }
+    nav#mainNav {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    a.navbar-brand {
+        padding-left: 15px;
+    }
+    button.navbar-toggler.navbar-toggler-right {
+        padding-right: 15px !important;
+    }
+    #mainNav .navbar-nav .nav-item:hover .nav-link {
+        box-shadow: 0px 2px 8px 0 rgba(0, 0, 0, 0.12);
+        background-color: #FFF0EE;
+    }
+    #mainNav .navbar-nav .nav-item:hover .nav-link::before {
+        content: url(../images/Solution_IT\ Service.svg);
+        background-color: #FFDDD8;
+    }
+    ul.cont-ul {
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        list-style-type: none;
+        background-color: #F0F0F0;
+        padding: 20px 15px;
+        margin-top: 11px;
+        width: 100%;
+    }
+    li.cont-li1>p {
+        font-weight: 400;
+    }
+    li.cont-li1 button.btn.btn-theme-white {
+        margin-top: 0px !important;
+    }
+    li.cont-li2>img {
+        width: 100%;
+    }
+    li.cont-li1 {
+        width: 70%;
+    }
+    li.cont-li2 {
+        width: 30%;
     }
 }
 
@@ -620,8 +710,22 @@ M E D I A  Q U E R I E S
     a.search-mobile-icon {
         display: none;
     }
+    a.nav-link span {
+        display: none;
+    }
+    li.nav-item.last-nav span {
+        display: initial;
+    }
+    ul.cont-ul {
+        display: none;
+    }
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1280px) {
+    header.masthead .intro-text .intro-heading {
+        font-size: 32px;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
