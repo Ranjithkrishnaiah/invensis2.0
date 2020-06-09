@@ -36,7 +36,7 @@ M E D I A  Q U E R I E S
         font-size: 16px;
     }
     .btn-industry-service {
-        margin-top: 0px;
+        margin-top: -5px;
     }
     .sec-abt-bpm-sec .lists-bpm {
         float: none;
@@ -48,6 +48,32 @@ M E D I A  Q U E R I E S
     li.cont-li1 button.btn.btn-theme-white {
         font-size: 11px !important;
         padding: 5px 0px 5px 13px !important;
+    }
+    .casestudy-bgimg1 {
+        padding-left: 0%;
+    }
+    .cadestudy-block-news .footer-case>p {
+        font-size: 12px;
+        top: 0px;
+    }
+    p.full-articlepara span {
+        font-size: 12px !important;
+        top: 0px;
+    }
+    .footer-case>p {
+        padding: 15px 5px 0;
+    }
+    .footer-case>p>span>i {
+        padding-right: 0px;
+    }
+    p.full-articlepara1 {
+        top: 0px;
+    }
+    .card-detail-industry {
+        padding: 15px 5px 15px 25px;
+    }
+    ul.industry-service-ul>li {
+        margin-bottom: 5px;
     }
 }
 
@@ -71,6 +97,15 @@ M E D I A  Q U E R I E S
     }
     .resource-pd {
         padding-right: 50px;
+    }
+    .solutions-card h5 {
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 2;
+        height: 43px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
@@ -175,9 +210,12 @@ M E D I A  Q U E R I E S
     .banner-text>p {
         font-size: 12px;
     }
+    button.btn.btn-theme-white.follow-btn.ripple {
+        padding: 0px 7px !important;
+    }
     button.btn.btn-theme-white {
         margin-top: 20px;
-        padding: 10px 10px 10px 20px !important;
+        padding: 10px 5px 10px 20px !important;
     }
     button.btn.btn-theme-white.js-scroll-trigger {
         margin-right: 5px;
@@ -222,7 +260,7 @@ M E D I A  Q U E R I E S
         padding-top: 30px;
     }
     .challenges-card {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     .row.services-abt {
         margin-top: 50px;
@@ -284,6 +322,9 @@ M E D I A  Q U E R I E S
     .bpm-card>div {
         padding: 20px 10px;
     }
+    .bpm-card>div {
+        width: auto;
+    }
     .row.row-bpm>div {
         margin-top: 30px;
     }
@@ -336,6 +377,20 @@ M E D I A  Q U E R I E S
     li.cont-li1>p {
         font-size: 12px;
     }
+    .bg-res {
+        margin: 50px 0px;
+    }
+    .case-heading {
+        width: 100%;
+        float: none;
+    }
+    .footer-case button {
+        border-bottom-left-radius: 8px !important;
+    }
+    .tool-card-back>p {
+        -webkit-line-clamp: 2;
+        height: 43px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -347,10 +402,6 @@ M E D I A  Q U E R I E S
     }
     ul.navs-resources li {
         padding: 0px 10px;
-    }
-    ul.organize-ul>li {
-        display: flex;
-        justify-content: flex-end;
     }
     ul.organize-ul>li img {
         margin: -10px 0 0 15px;
@@ -365,13 +416,13 @@ M E D I A  Q U E R I E S
         padding: 50px 10px;
     }
     .tool-card {
-        height: 210px;
+        height: 190px;
     }
     .tools-screenshots {
         margin-top: 155px;
     }
     .card.card-flip.card-industries {
-        height: 300px;
+        height: 265px;
     }
     .banner-text {
         padding: 17% 10% 8% 0;
@@ -387,9 +438,6 @@ M E D I A  Q U E R I E S
     }
     .platform-block {
         height: 185px;
-    }
-    .solutions-tab-body p {
-        height: 80px;
     }
     button.btn.btn-theme-white {
         font-size: 14px;
@@ -447,6 +495,16 @@ M E D I A  Q U E R I E S
         padding: 10px 20px 10px 35px;
         font-size: 14px !important;
     }
+    img.img-res-sec {
+        margin-bottom: 30px;
+    }
+    .resource-rel {
+        height: 60px;
+    }
+    .case-heading {
+        width: 100%;
+        float: none;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -484,7 +542,7 @@ M E D I A  Q U E R I E S
         padding-top: 0px;
     }
     .tool-card {
-        height: 220px;
+        height: 200px;
     }
     .tools-screenshots {
         padding-top: 50px;
@@ -502,9 +560,6 @@ M E D I A  Q U E R I E S
     .banner-text.full-width-services-text {
         padding-right: 20%;
         padding-left: 20%;
-    }
-    .solutions-tab-body p {
-        height: 60px;
     }
     .btn-industry-service {
         margin-top: 0px;
@@ -525,6 +580,27 @@ M E D I A  Q U E R I E S
     }
     .submenucol-video {
         height: 390px;
+    }
+    .resource-rel {
+        height: 75px;
+    }
+    p.full-articlepara span {
+        font-size: 16px;
+    }
+    .tool-card-back button {
+        padding: 10px 5px 10px 25px !important;
+    }
+    .solutions-tab-body h5 {
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 2;
+        height: 48px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .platform-block>p {
+        font-size: 14px;
     }
 }
 
@@ -580,7 +656,6 @@ M E D I A  Q U E R I E S
     nav#mainNav {
         padding-left: 0px;
         padding-right: 0px;
-        padding-bottom: 0px;
     }
     a.navbar-brand {
         padding-left: 15px;
@@ -620,6 +695,23 @@ M E D I A  Q U E R I E S
     }
     li.cont-li2 {
         width: 30%;
+    }
+    ul.articles-ul {
+        display: block;
+    }
+    ul.articles-ul>li {
+        float: none;
+        width: 100%;
+    }
+    li.art-rightli {
+        padding-top: 20px;
+    }
+    img.img-fluid.img-res-news {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    p.full-articlepara span {
+        font-size: 16px;
     }
 }
 
@@ -719,6 +811,28 @@ M E D I A  Q U E R I E S
     ul.cont-ul {
         display: none;
     }
+    img.img-res-sec {
+        height: 380px;
+    }
+    ul.casestudy-newsblocks li.left-casestudy {
+        width: 35%;
+    }
+    ul.casestudy-newsblocks li.right-casestudy {
+        width: 65%;
+    }
+    li.left-casestudy>img {
+        border-bottom-left-radius: 0px;
+    }
+    .platform-block>p {
+        line-height: 20px;
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 2;
+        height: 40px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1280px) {
@@ -766,7 +880,7 @@ M E D I A  Q U E R I E S
     .industries-card>p {
         margin: 10px 0px 20px;
     }
-    .solutions-tab-body p {
-        height: 40px;
+    .ind-imgborder {
+        margin-bottom: 25px;
     }
 }

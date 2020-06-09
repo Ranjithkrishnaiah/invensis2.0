@@ -21,46 +21,67 @@
 </head>
 <body>
 	<!-- Navigation starts -->
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-		<div class="container">
-		  <a class="navbar-brand js-scroll-trigger" href="index.html">
-			  <img src="assets/images/logo-white.png" alt="logo" class="img-fluid img-logo logo-white">
-			  <img src="assets/images/logo-black.svg" alt="logo" class="img-fluid img-logo logo-black">
-		  </a>
-		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#">Product</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="services-home.html">Services</a>
-			  </li>
-			  <!-- <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#">Solutions</a>
-			  </li> -->
-			  <li class="nav-item active">
-				<a class="nav-link js-scroll-trigger" href="industry-home.html">Industries</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="resources-home.html">Resources</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#">Quality and Compliance</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#">Clients</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#search"><i class="fa fa-search" aria-hidden="true"></i></a>
-			  </li>
-			  <li class="nav-item last-nav">
-				<a class="nav-link js-scroll-trigger ripple" href="#">CONTACT US <span>&#10230;</span></a>
-			  </li>
-			</ul>
-		  </div>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container submenu-relative">
+			<a class="navbar-brand js-scroll-trigger" href="index.html">
+				<img src="assets/images/logo-white.png" alt="logo" class="img-fluid img-logo logo-white">
+				<img src="assets/images/logo-black.svg" alt="logo" class="img-fluid img-logo logo-black">
+			</a>
+			<a class="search-mobile-icon ser-input"><i class="fa fa-search" aria-hidden="true"></i></a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span>
+                <span></span>
+                <span></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#">Product<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="services-home.html">Services<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link js-scroll-trigger" href="industry-home.html">Industries<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="resources-home.html">Resources<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#">Quality and Compliance<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#">Clients<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item d-none d-lg-block">
+						<a class="nav-link js-scroll-trigger ser-input"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</li>
+					<li class="nav-item last-nav d-none d-lg-block">
+						<a class="nav-link js-scroll-trigger ripple" href="#">CONTACT US <span>&#10230;</span></a>
+					</li>
+				</ul>
+				<div class="contact-mobile-block">
+					<ul class="cont-ul">
+						<li class="cont-li1">
+							<h4>Would you like to speak to one of our advisers?</h4>
+							<p>Just submit your contact details and we’ll be in touch shortly.</p>
+							<button class="btn btn-theme-white ripple">Get a Quote <span>⟶</span></button>
+							<button class="btn btn-theme-white ripple">Contact Us <span>⟶</span></button>
+						</li>
+						<li class="cont-li2">
+							<img src="https://via.placeholder.com/150x150" alt="img" class="img-fluid img-cont">
+						</li>
+					</ul>
+				</div>
+			</div>
+			  <!-- search full screen block -->
+			<div class="search-full-view">
+				<div class="input-group">
+				<input type="text" class="form-control" placeholder="Type your search and hit enter...">
+				</div>
+				<button class="btn btn-close" id="search-close"><img src="assets/images/close.png"></button>
+			</div>
+			<!-- search full screen block -->
 		</div>
 	</nav>
 	<!-- Navigation ends -->
@@ -106,10 +127,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/Logistics-Supply-chain.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Logistic & supply.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Logistics and Supply Chain</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -135,10 +156,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/Retail.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Retail.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Retail</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -164,10 +185,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/CustomBrokerage.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Custom Brokerage.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Customs Brokerage</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -196,10 +217,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/Insurance.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Insurance BPO.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Insurance BPO</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -225,10 +246,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/Healthcare.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Healthcare BPO.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Healthcare BPO</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -254,10 +275,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/Media-entertainment.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Media & Entertainment .svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Media & Entertainment</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -286,10 +307,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/telecommunication.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Telecommunication.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Telecommunications</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -315,10 +336,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/RealEstate.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Real Estate BPO.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Real Estate BPO</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -344,10 +365,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/EnergyUtilities.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Energy & Utilities.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Energy & Utilities</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -376,10 +397,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/Education.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Eduation.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Education</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -405,10 +426,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/Automotive.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Automotive BPO.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Automotive BPO</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -434,10 +455,10 @@
                         <div class="industry-service">
                             <div class="industry-carding">
                                 <div class="card-industry">
-                                    <img src="assets/images/IT-Service.jpg" alt="alt" class="img-fluid">
+                                    <img src="assets/images/ChemicalManufacturing.jpg" alt="alt" class="img-fluid">
                                 </div>
                                 <div class="card-industry-body">
-                                    <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-industry-icon">
+                                    <img src="assets/images/industry/black/Industry_Chemical Manufaturing.svg" alt="img" class="img-fluid img-industry-icon">
                                     <h4>Chemical and Manufacturing</h4>
                                     <p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
                                 </div>
@@ -541,28 +562,28 @@
 
 			<ul class="business-icons business-icons-red">
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">5840</span>+</h4>
+					<img src="assets/images/services/orange/Orange_CustomerService.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">5840</span>+</h4>
 					<p>Days of customer service delivered</p>
 				</li>
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">6900</span>+</h4>
+					<img src="assets/images/services/orange/Orange_CustomerExperience.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">6900</span>+</h4>
 					<p>average days of experience of a SME in customer experience</p>
 				</li>
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">150</span>+</h4>
+					<img src="assets/images/services/orange/Orange_Businessprocess.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">150</span>+</h4>
 					<p>business processes streamlined across industries</p>
 				</li>
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">2500</span>+</h4>
+					<img src="assets/images/services/orange/Orange_CustomerFocused.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">2500</span>+</h4>
 					<p>Customer-focused <br class="visible-lg"> employees</p>
 				</li>
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">100</span>+</h4>
+					<img src="assets/images/services/orange/Orange_CumulativeYears.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">100</span>+</h4>
 					<p>cumulative years of customer service leadership</p>
 				</li>
 			</ul>
@@ -580,24 +601,24 @@
 						<h2><span style="color: #FC6A55;">Invensis</span> - Your Partner to Achieve Business Transformation</h2>
 						<div class="row business-value-row">
 							<div class="col-md-6 services-business-value">
-								<img src="assets/images/Solution_IT Service.svg" alt="img" class="img-fluid img-business-value">
+								<img src="assets/images/services/orange/Business transformation_Value added consultation.svg" alt="img" class="img-fluid img-business-value">
 								<h5>Value-added Consultation</h5>
 								<p>Having considerable experience and expertise in delivering global BPO services, we ensure that our value added consultations provides the right answers to your business challenge.</p>
 							</div>
 							<div class="col-md-6 services-business-value">
-								<img src="assets/images/Solution_IT Service.svg" alt="img" class="img-fluid img-business-value">
+								<img src="assets/images/services/orange/Business transformation_Business continuity planning.svg" alt="img" class="img-fluid img-business-value">
 								<h5>Business Continuity Planning</h5>
 								<p>Having considerable experience and expertise in delivering global BPO services, we ensure that our value added consultations provides the right answers to your business challenge.</p>
 							</div>
 						</div>
 						<div class="row business-value-row">
 							<div class="col-md-6 services-business-value">
-								<img src="assets/images/Solution_IT Service.svg" alt="img" class="img-fluid img-business-value">
+								<img src="assets/images/services/orange/Business transformation_End to end customized.svg" alt="img" class="img-fluid img-business-value">
 								<h5>End to End Customized</h5>
 								<p>Having considerable experience and expertise in delivering global BPO services, we ensure that our value added consultations provides the right answers to your business challenge.</p>
 							</div>
 							<div class="col-md-6 services-business-value">
-								<img src="assets/images/Solution_IT Service.svg" alt="img" class="img-fluid img-business-value">
+								<img src="assets/images/services/orange/Business transformation_Scalable and on-time delivery.svg" alt="img" class="img-fluid img-business-value">
 								<h5>Scalable and On-Time Delivery</h5>
 								<p>Having considerable experience and expertise in delivering global BPO services, we ensure that our value added consultations provides the right answers to your business challenge.</p>
 							</div>
@@ -1080,6 +1101,14 @@
 			matchHeight.init();
 		}
 	);
+	</script>
+	<!-- counter-up js -->
+	<script src="assets/js/counterup.min.js"></script>
+	<script>
+	$('[data-toggle="counter-up"]').counterUp({
+		delay: 10,
+		time: 1000
+	});
 	</script>
 </body>
 </html>

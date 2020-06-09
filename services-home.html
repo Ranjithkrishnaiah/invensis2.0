@@ -21,46 +21,67 @@
 </head>
 <body>
 	<!-- Navigation starts -->
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-		<div class="container">
-		  <a class="navbar-brand js-scroll-trigger" href="index.html">
-			  <img src="assets/images/logo-white.png" alt="logo" class="img-fluid img-logo logo-white">
-			  <img src="assets/images/logo-black.svg" alt="logo" class="img-fluid img-logo logo-black">
-		  </a>
-		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#">Product</a>
-			  </li>
-			  <li class="nav-item active">
-				<a class="nav-link js-scroll-trigger" href="services-home.html">Services</a>
-			  </li>
-			  <!-- <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#">Solutions</a>
-			  </li> -->
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="industry-home.html">Industries</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="resources-home.html">Resources</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#">Quality and Compliance</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#">Clients</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="#search"><i class="fa fa-search" aria-hidden="true"></i></a>
-			  </li>
-			  <li class="nav-item last-nav">
-				<a class="nav-link js-scroll-trigger ripple" href="#">CONTACT US <span>&#10230;</span></a>
-			  </li>
-			</ul>
-		  </div>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div class="container submenu-relative">
+			<a class="navbar-brand js-scroll-trigger" href="index.html">
+				<img src="assets/images/logo-white.png" alt="logo" class="img-fluid img-logo logo-white">
+				<img src="assets/images/logo-black.svg" alt="logo" class="img-fluid img-logo logo-black">
+			</a>
+			<a class="search-mobile-icon ser-input"><i class="fa fa-search" aria-hidden="true"></i></a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span>
+                <span></span>
+                <span></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#">Product<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link js-scroll-trigger" href="services-home.html">Services<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="industry-home.html">Industries<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="resources-home.html">Resources<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#">Quality and Compliance<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#">Clients<span>&#10230;</span></a>
+					</li>
+					<li class="nav-item d-none d-lg-block">
+						<a class="nav-link js-scroll-trigger ser-input"><i class="fa fa-search" aria-hidden="true"></i></a>
+					</li>
+					<li class="nav-item last-nav d-none d-lg-block">
+						<a class="nav-link js-scroll-trigger ripple" href="#">CONTACT US <span>&#10230;</span></a>
+					</li>
+				</ul>
+				<div class="contact-mobile-block">
+					<ul class="cont-ul">
+						<li class="cont-li1">
+							<h4>Would you like to speak to one of our advisers?</h4>
+							<p>Just submit your contact details and we’ll be in touch shortly.</p>
+							<button class="btn btn-theme-white ripple">Get a Quote <span>⟶</span></button>
+							<button class="btn btn-theme-white ripple">Contact Us <span>⟶</span></button>
+						</li>
+						<li class="cont-li2">
+							<img src="https://via.placeholder.com/150x150" alt="img" class="img-fluid img-cont">
+						</li>
+					</ul>
+				</div>
+			</div>
+			  <!-- search full screen block -->
+			<div class="search-full-view">
+				<div class="input-group">
+				<input type="text" class="form-control" placeholder="Type your search and hit enter...">
+				</div>
+				<button class="btn btn-close" id="search-close"><img src="assets/images/close.png"></button>
+			</div>
+			<!-- search full screen block -->
 		</div>
 	</nav>
 	<!-- Navigation ends -->
@@ -100,8 +121,8 @@
 				<li class="nav-item navs-solutions-item">
 					<a class="nav-link navs-solutions-link syns-link2 active" id="pills-service-tab" data-toggle="pill" href="#pills-service" role="tab" aria-controls="pills-service" aria-selected="true">
                         <h4 class="stns-head">
-                            <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-st1 img-solution-tab-img">
-                            <img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-st2 img-solution-tab-img">
+                            <img src="assets/images/services/black/default_services.svg" alt="img" class="img-fluid img-st1 img-solution-tab-img">
+                            <img src="assets/images/services/white/hover_services.svg" alt="img" class="img-fluid img-st2 img-solution-tab-img">
                             Services
                         </h4>
 					</a>
@@ -109,8 +130,8 @@
 				<li class="nav-item navs-solutions-item">
 					<a class="nav-link navs-solutions-link syns-link1" id="pills-solution-tab" data-toggle="pill" href="#pills-solution" role="tab" aria-controls="pills-solution" aria-selected="false">
                         <h4 class="stns-head">
-                            <img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-st1 img-solution-tab-img">
-                            <img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-st2 img-solution-tab-img">
+                            <img src="assets/images/services/black/defalut_solution.svg" alt="img" class="img-fluid img-st1 img-solution-tab-img">
+                            <img src="assets/images/services/white/hover_solution.svg" alt="img" class="img-fluid img-st2 img-solution-tab-img">
                             Solutions
                         </h4>
 					</a>
@@ -126,10 +147,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/Finance-Accounting.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_F&AService.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_F&AService.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Finance & Accounting</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -140,10 +161,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/e-Commerce.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_eCommerce.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_eCommerce.svg" alt="img" class="img-fluid img-stns2">
 										<h5>eCommerce Support Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -154,10 +175,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/TrainingDevelopment.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_TrainingDevelopment.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_TrainingDevelopment.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Training & Development Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -170,10 +191,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/Back-Office.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_BackofficeService.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_Back officeService.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Back Office BPO Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -186,8 +207,8 @@
 								<div class="solutions-tab-card">
 									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_ITService.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_ITService.svg" alt="img" class="img-fluid img-stns2">
 										<h5>IT Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -198,10 +219,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/DigitalMarketing.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_Digitalmarketing.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_Digitalmarketing.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Digital Marketing Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -214,10 +235,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/OrderManagement2.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_OderManagement.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_OderManagement.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Order Management Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -228,10 +249,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/CallCenter.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_CallCenter.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_CallCenter.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Call Center Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -249,10 +270,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/Finance-Accounting.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_F&AService.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_F&AService.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Finance & Accounting</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -263,10 +284,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/e-Commerce.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_eCommerce.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_eCommerce.svg" alt="img" class="img-fluid img-stns2">
 										<h5>eCommerce Support Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -277,10 +298,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/TrainingDevelopment.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_TrainingDevelopment.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_TrainingDevelopment.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Training & Development Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -293,10 +314,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/Back-Office.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_BackofficeService.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_Back officeService.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Back Office BPO Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -309,8 +330,8 @@
 								<div class="solutions-tab-card">
 									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_ITService.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_ITService.svg" alt="img" class="img-fluid img-stns2">
 										<h5>IT Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -321,10 +342,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/DigitalMarketing.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_Digitalmarketing.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_Digitalmarketing.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Digital Marketing Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -337,10 +358,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/OrderManagement2.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_OderManagement.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_OderManagement.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Order Management Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -351,10 +372,10 @@
                         <div class="col-md-4">
 							<a href="services.html">
 								<div class="solutions-tab-card">
-									<img class="img-fluid solutions-tab-img" src="assets/images/IT-Service.jpg" alt="img">
+									<img class="img-fluid solutions-tab-img" src="assets/images/CallCenter.jpg" alt="img">
 									<div class="solutions-tab-body">
-										<img src="assets/images/Default_Email us.svg" alt="img" class="img-fluid img-stns1">
-										<img src="assets/images/Hover_Email us.svg" alt="img" class="img-fluid img-stns2">
+										<img src="assets/images/services/black/Services_Default_CallCenter.svg" alt="img" class="img-fluid img-stns1">
+										<img src="assets/images/services/white/Hover_CallCenter.svg" alt="img" class="img-fluid img-stns2">
 										<h5>Call Center Services</h5>
 										<p>In an age when technology, in some form or the other, is a fundamental part of most people's lives.</p>
 										<button class="btn btn-more-transparent">Explore More <span>⟶</span></button>
@@ -447,28 +468,28 @@
 
 			<ul class="business-icons business-icons-red">
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">5840</span>+</h4>
+					<img src="assets/images/services/orange/Orange_CustomerService.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">5840</span>+</h4>
 					<p>Days of customer service delivered</p>
 				</li>
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">6900</span>+</h4>
+					<img src="assets/images/services/orange/Orange_CustomerExperience.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">6900</span>+</h4>
 					<p>average days of experience of a SME in customer experience</p>
 				</li>
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">150</span>+</h4>
+					<img src="assets/images/services/orange/Orange_Businessprocess.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">150</span>+</h4>
 					<p>business processes streamlined across industries</p>
 				</li>
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">2500</span>+</h4>
+					<img src="assets/images/services/orange/Orange_CustomerFocused.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">2500</span>+</h4>
 					<p>Customer-focused <br class="visible-lg"> employees</p>
 				</li>
 				<li class="business-block">
-					<img src="assets/images/Solution_IT Service.svg" alt="business-icon">
-					<h4><span class="counter-count">100</span>+</h4>
+					<img src="assets/images/services/orange/Orange_CumulativeYears.svg" alt="business-icon">
+					<h4><span data-toggle="counter-up">100</span>+</h4>
 					<p>cumulative years of customer service leadership</p>
 				</li>
 			</ul>
@@ -486,24 +507,24 @@
 						<h2><span style="color: #FC6A55;">Invensis</span> - Your Partner to Achieve Business Transformation</h2>
 						<div class="row business-value-row">
 							<div class="col-md-6 services-business-value">
-								<img src="assets/images/Solution_IT Service.svg" alt="img" class="img-fluid img-business-value">
+								<img src="assets/images/services/orange/Business transformation_Value added consultation.svg" alt="img" class="img-fluid img-business-value">
 								<h5>Value-added Consultation</h5>
 								<p>Having considerable experience and expertise in delivering global BPO services, we ensure that our value added consultations provides the right answers to your business challenge.</p>
 							</div>
 							<div class="col-md-6 services-business-value">
-								<img src="assets/images/Solution_IT Service.svg" alt="img" class="img-fluid img-business-value">
+								<img src="assets/images/services/orange/Business transformation_Business continuity planning.svg" alt="img" class="img-fluid img-business-value">
 								<h5>Business Continuity Planning</h5>
 								<p>Having considerable experience and expertise in delivering global BPO services, we ensure that our value added consultations provides the right answers to your business challenge.</p>
 							</div>
 						</div>
 						<div class="row business-value-row">
 							<div class="col-md-6 services-business-value">
-								<img src="assets/images/Solution_IT Service.svg" alt="img" class="img-fluid img-business-value">
+								<img src="assets/images/services/orange/Business transformation_End to end customized.svg" alt="img" class="img-fluid img-business-value">
 								<h5>End to End Customized</h5>
 								<p>Having considerable experience and expertise in delivering global BPO services, we ensure that our value added consultations provides the right answers to your business challenge.</p>
 							</div>
 							<div class="col-md-6 services-business-value">
-								<img src="assets/images/Solution_IT Service.svg" alt="img" class="img-fluid img-business-value">
+								<img src="assets/images/services/orange/Business transformation_Scalable and on-time delivery.svg" alt="img" class="img-fluid img-business-value">
 								<h5>Scalable and On-Time Delivery</h5>
 								<p>Having considerable experience and expertise in delivering global BPO services, we ensure that our value added consultations provides the right answers to your business challenge.</p>
 							</div>
@@ -986,6 +1007,14 @@
 			matchHeight.init();
 		}
 	);
+	</script>
+	<!-- counter-up js -->
+	<script src="assets/js/counterup.min.js"></script>
+	<script>
+	$('[data-toggle="counter-up"]').counterUp({
+		delay: 10,
+		time: 1000
+	});
 	</script>
 </body>
 </html>
