@@ -8,6 +8,9 @@ M E D I A  Q U E R I E S
     .padding-right {
         padding-right: 0px;
     }
+    .head-toggle-business::after {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -17,12 +20,22 @@ M E D I A  Q U E R I E S
     .d-flex.justify-content-around.home-clients-block {
         padding: 10px 0px;
     }
+    .card-head-business {
+        padding-left: 10px;
+    }
+    .card-body-business {
+        padding: 10px 10px 0px 75px;
+    }
     .business-icons {
         margin: 30px 0 0;
     }
     ul.business-icons>li {
-        width: 100%;
-        margin-top: 30px;
+        width: 50%;
+        margin-top: 0px;
+        float: left;
+    }
+    .bg-res.bg-res1 {
+        background-position: right;
     }
     .navs-solutions>li>a {
         padding: 9px 25px;
@@ -75,6 +88,19 @@ M E D I A  Q U E R I E S
     ul.industry-service-ul>li {
         margin-bottom: 5px;
     }
+    section.business-process {
+        height: 1350px;
+    }
+    .particle-text1 {
+        top: -7%;
+    }
+    .business-block>p {
+        height: 80px;
+        margin: 0;
+    }
+    .business-block>h4 {
+        margin: 5px 0px 0px;
+    }
 }
 
 
@@ -107,6 +133,28 @@ M E D I A  Q U E R I E S
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    h4.head-careerdesc {
+        display: none;
+    }
+    .blogstabs-col {
+        display: flex;
+    }
+    .banner-text.full-width-services-text.resources-banner-text {
+        text-align: left;
+        padding: 17% 0% 8% 47%;
+    }
+    p.list-description {
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 7;
+        height: 145px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .owl-carousel-careertesti-section .owl-nav {
+        display: block !important;
+    }
 }
 
 @media (max-width: 767px) {
@@ -114,12 +162,60 @@ M E D I A  Q U E R I E S
         font-size: 20px;
         line-height: 25px;
     }
+    section.best-clients.section-padding {
+        padding-bottom: 100px;
+    }
+    .tools-screenshots, img.business-img-main {
+        display: none;
+    }
     header.masthead .intro-text .intro-heading {
         font-size: 24px;
         margin: 10px 0px;
     }
+    .col-md-3.qualityclientcol {
+        margin-top: 30px;
+    }
+    .solutions-tab-body p {
+        -webkit-line-clamp: initial;
+        height: auto;
+    }
+    .services-inner-card>p {
+        -webkit-line-clamp: initial;
+        height: auto;
+    }
+    p.list-description {
+        display: none;
+    }
+    h4.desc-desktop {
+        display: none;
+    }
+    .carrer-listing-div {
+        min-height: fit-content !important;
+    }
     .intro-medium {
         font-size: 14px;
+    }
+    .desc-detail>h4 {
+        position: relative;
+        cursor: pointer;
+    }
+    h4.head-careerdesc::after {
+        content: "\f107"; /* fa-chevron-down */
+        font-family: 'FontAwesome';
+        position: absolute;
+        right: 0;
+        top: 5px;
+        font-size: 20px;
+        color: #FC6A55;
+    }
+    h4.head-careerdesc[aria-expanded="true"]::after {
+        content: "\f106"; /* fa-chevron-up */
+    }
+    .services-abt-div.partner-quality>h5 {
+        margin: 15px 0px;
+    }
+    .partner-block {
+        margin: 30px 0px 0px;
     }
     button.btn.btn-theme {
         font-size: 14px;
@@ -132,10 +228,13 @@ M E D I A  Q U E R I E S
         margin-top: 10px;
     }
     .services-block-text>h2 {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    section.services-dreams.section-padding .col-md-6.d-flex.align-items-center {
+        display: block !important;
     }
     .services-block-text>p {
-        font-size: 18px;
+        font-size: 16px;
     }
     button.btn.btn-more.ripple {
         font-size: 14px;
@@ -229,6 +328,10 @@ M E D I A  Q U E R I E S
     .section-padding {
         padding: 50px 0px;
     }
+    .invfour-blocks>h6 {
+        -webkit-line-clamp: 2;
+        height: 40px;
+    }
     .float-right {
         text-align: center;
     }
@@ -246,6 +349,11 @@ M E D I A  Q U E R I E S
     }
     .services-inner-card {
         margin-top: 20px;
+        height: auto;
+    }
+    .card-industry-body>p {
+        -webkit-line-clamp: initial;
+        height: auto;
     }
     .controls-owl-prev {
         margin-left: 0px;
@@ -277,8 +385,8 @@ M E D I A  Q U E R I E S
     .services-abt-div {
         text-align: center;
     }
-    .organize-block {
-        background-color: #FBFBFB;
+    section.organization-sec .organize-block {
+        min-height: auto !important;
     }
     .solutions-tab-card {
         text-align: center;
@@ -391,6 +499,12 @@ M E D I A  Q U E R I E S
         -webkit-line-clamp: 2;
         height: 43px;
     }
+    section.resources-sec {
+        padding-bottom: 50px;
+    }
+    .div-video-business>iframe {
+        height: 265px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -399,6 +513,18 @@ M E D I A  Q U E R I E S
     }
     .solutions-card {
         height: 257px;
+    }
+    .qualityclientimg {
+        padding: 44px 23px;
+    }
+    .services-block-text>h2 {
+        font-size: 24px;
+    }
+    .partner-block {
+        margin: 0px;
+    }
+    .tools-screenshots>img {
+        height: 410px;
     }
     ul.navs-resources li {
         padding: 0px 10px;
@@ -433,15 +559,14 @@ M E D I A  Q U E R I E S
     .services-inner-card {
         height: auto;
     }
-    .organize-block {
-        background-color: #FBFBFB;
+    section.organization-sec .organize-block {
+        min-height: auto !important;
     }
     .platform-block {
         height: 185px;
     }
     button.btn.btn-theme-white {
         font-size: 14px;
-        padding: 5px 5px 5px 15px;
     }
     ul.stage2-services-ul>li {
         width: 32%;
@@ -479,9 +604,6 @@ M E D I A  Q U E R I E S
     .footer-case {
         position: relative;
     }
-    .body-case>h4 {
-        height: auto;
-    }
     li.nav-item.last-nav>a {
         padding: 10px !important;
     }
@@ -505,6 +627,13 @@ M E D I A  Q U E R I E S
         width: 100%;
         float: none;
     }
+    .div-video-business>iframe {
+        height: 300px;
+    }
+    .invfour-blocks>h6 {
+        -webkit-line-clamp: 3;
+        height: 57px;
+    }
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -520,6 +649,9 @@ M E D I A  Q U E R I E S
         background-color: #FC6A55;
         border: 1px solid #FC6A55;
     }
+    .qualityclientimg {
+        padding: 65px 50px;
+    }
     .video-business {
         padding: 0px 200px;
     }
@@ -534,6 +666,9 @@ M E D I A  Q U E R I E S
     }
     .organize-head {
         padding: 30px 10px 30px 10px;
+    }
+    .inv-blocks {
+        margin: 0px 5% 0px 5%;
     }
     .enquire-div {
         height: 200px;
@@ -578,9 +713,6 @@ M E D I A  Q U E R I E S
         position: relative;
         top: 6px;
     }
-    .submenucol-video {
-        height: 390px;
-    }
     .resource-rel {
         height: 75px;
     }
@@ -602,14 +734,26 @@ M E D I A  Q U E R I E S
     .platform-block>p {
         font-size: 14px;
     }
+    .div-video-business>iframe {
+        height: 320px;
+    }
 }
 
 @media (max-width: 992px) {
     .advisors-div>h2 {
         font-size: 22px;
     }
+    .img-block-logistics>img {
+        height: auto;
+    }
+    .row.business-value-row {
+        margin-top: 0px;
+    }
     .advisors-div>h3 {
         font-size: 18px;
+    }
+    .abt-value-img>img {
+        height: auto;
     }
     .quote-div {
         margin-top: 0px;
@@ -617,6 +761,12 @@ M E D I A  Q U E R I E S
     .banner-text.full-width-services-text {
         padding-right: 0;
         padding-left: 0;
+    }
+    .owl-carousel-careertesti-section .owl-prev {
+        left: -8%;
+    }
+    .owl-carousel-careertesti-section .owl-next {
+        right: -8%;
     }
     .particle-text {
         width: 90%;
@@ -769,6 +919,9 @@ M E D I A  Q U E R I E S
     img.logo-black {
         display: none;
     }
+    .col-openings {
+        padding: 0 30px;
+    }
     #mainNav.navbar-shrink img.logo-black {
         display: block;
     }
@@ -786,9 +939,6 @@ M E D I A  Q U E R I E S
     }
     .resources-blog-explore>h5 {
         padding-right: 30px;
-    }
-    .organize-body {
-        height: 230px;
     }
     .enquire-block {
         margin: 0px 50px;
@@ -833,11 +983,60 @@ M E D I A  Q U E R I E S
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .body-case>p, ul.casestudy-ul.casestudy-newsblocks .body-case>p {
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 3;
+        height: 64px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    ul.casestudy-ul .body-case>p {
+        -webkit-line-clamp: 8;
+        height: 165px;
+    }
+    .body-case>h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 2;
+        height: 43px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    li.art-rightli>p {
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 7;
+        height: 145px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .invfour-blocks>h6 {
+        line-height: 20px;
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 2;
+        height: 40px;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1280px) {
     header.masthead .intro-text .intro-heading {
         font-size: 32px;
+    }
+}
+
+@media (min-width: 2000px) {
+    section.business-process {
+        background-size: 100% 100%;
     }
 }
 
@@ -882,5 +1081,8 @@ M E D I A  Q U E R I E S
     }
     .ind-imgborder {
         margin-bottom: 25px;
+    }
+    .inv-blocks {
+        margin: 30px 10% 0px 10%;
     }
 }

@@ -1,0 +1,12 @@
+1. All pages top banner images
+2. Clients images
+3. Home page - "our solutions" background image
+4. Home page - "Product(Tools)" icons and right side images
+5. Home page - "Trusted by Over 500 Organizations World Over" background image "66"
+6. Home page - "Three Simple Business Strategy at Invensis" background image
+7. services page - 
+"Invensis Enables Your Organization to Meet Today’s IT Challenges" icons
+"Would you like to speak to one of our advisor?" image
+"Development By Platform" tab icons
+8. Logistics BPM Services page - Logistics BPM Services image
+9. Resources page - all the background images and popular, most downloaded, etc, images

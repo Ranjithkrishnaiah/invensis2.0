@@ -1,0 +1,20 @@
+html addition in the below page sections
+--------------------------------------------------------------------------------------------
+index.html :
+
+"Our Solutions" section
+"Top Industries we serve" section
+"Trusted by Over 500 Organizations World Over" section
+"Our Popular Resources" section
+"Partner for Optimal Business Process Performance" section
+
+--------------------------------------------------------------------------------------------
+services.html :
+
+services all 3 tabs section
+"Meet Today’s IT Challenges" section
+"About the Services" section
+
+--------------------------------------------------------------------------------------------
+
+Replace all the icons

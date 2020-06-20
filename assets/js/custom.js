@@ -121,3 +121,24 @@ $(document).ready(function() {
       $('html, body').animate({scrollTop: 0}, 1000);
     })
 });
+
+
+// javascript for only mobile screen
+$(document).ready(function () {
+    $(window).on("resize", function (e) {
+        checkScreenSize();
+    });
+
+    checkScreenSize();
+
+    function checkScreenSize(){
+        var newWindowWidth = $(window).width();
+        if (newWindowWidth < 767) {
+            $(".desc-detail-body").addClass("collapse");
+        }
+        else
+        {
+            $(".desc-detail-body").removeClass("collapse");
+        }
+    }
+});
