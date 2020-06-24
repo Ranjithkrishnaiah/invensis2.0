@@ -134,10 +134,12 @@ $(document).ready(function () {
     function checkScreenSize(){
         var newWindowWidth = $(window).width();
         if (newWindowWidth < 767) {
+            //career-detail page js
             $(".desc-detail-body").addClass("collapse");
         }
         else
         {
+            //career-detail page js
             $(".desc-detail-body").removeClass("collapse");
         }
     }

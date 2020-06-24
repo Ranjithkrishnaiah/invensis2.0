@@ -26,6 +26,9 @@ M E D I A  Q U E R I E S
     .card-body-business {
         padding: 10px 10px 0px 75px;
     }
+    section.scholarship-banner {
+        height: 270px;
+    }
     .business-icons {
         margin: 30px 0 0;
     }
@@ -33,6 +36,12 @@ M E D I A  Q U E R I E S
         width: 50%;
         margin-top: 0px;
         float: left;
+    }
+    ul.navs-careers>li {
+        width: 33%;
+    }
+    .image-scholarshipbanner>img {
+        width: 100%;
     }
     .bg-res.bg-res1 {
         background-position: right;
@@ -53,6 +62,9 @@ M E D I A  Q U E R I E S
     }
     .sec-abt-bpm-sec .lists-bpm {
         float: none;
+        width: 100%;
+    }
+    .btn-careersubmit button {
         width: 100%;
     }
     h3.case-heading::after {
@@ -101,6 +113,10 @@ M E D I A  Q U E R I E S
     .business-block>h4 {
         margin: 5px 0px 0px;
     }
+    .bg-res.bg-contactcareers {
+        padding-left: 21% !important;
+        background-size: 165% 100% !important;
+    }
 }
 
 
@@ -124,6 +140,9 @@ M E D I A  Q U E R I E S
     .resource-pd {
         padding-right: 50px;
     }
+    .carrerimg-mb {
+        display: none;
+    }
     .solutions-card h5 {
         display: -webkit-box;
         max-width: 100%;
@@ -138,6 +157,9 @@ M E D I A  Q U E R I E S
     }
     .blogstabs-col {
         display: flex;
+    }
+    .form-blockcontact>h5 {
+        display: none;
     }
     .banner-text.full-width-services-text.resources-banner-text {
         text-align: left;
@@ -165,6 +187,27 @@ M E D I A  Q U E R I E S
     section.best-clients.section-padding {
         padding-bottom: 100px;
     }
+    .job-btn, .job-btn button {
+        -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    .row.description-detail-row {
+        flex-direction: column-reverse;
+    }
+    .desc-detail {
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0,0.07);
+        padding: 20px 20px 1px;
+        margin-top: 30px;
+    }
+    .job-detail {
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0,0.07);
+    }
+    .job-btn button {
+        width: 100%;
+    }
     .tools-screenshots, img.business-img-main {
         display: none;
     }
@@ -175,9 +218,187 @@ M E D I A  Q U E R I E S
     .col-md-3.qualityclientcol {
         margin-top: 30px;
     }
+    .row.contactform-row {
+        flex-direction: column-reverse;
+    }
+    section.contact-banner {
+        height: auto;
+        background-size: cover;
+    }
+    div#particles-js-contact {
+        position: absolute;
+    }
+    .particle-text-contact {
+        position: relative;
+        right: initial;
+        transform: initial;
+    }
+    .contact-textbanner {
+        text-align: center;
+        margin: 100px 0px 30px;
+    }
+    .material-textfield {
+        margin-top: 10px !important;
+    }
+    .contact-textbanner>h1 {
+        font-size: 26px;
+        line-height: initial;
+    }
+    .contact-textbanner>p {
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+    ul.navs-careers>li {
+        border: none;
+        position: relative;
+    }
+    ul.navs-careers>li::after {
+        background-color: #DADADA;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        position: absolute;
+        top: 35px;
+        width: 100%;
+        left: 0px;
+        z-index: 0;
+    }
+    ul.navs-careers>li.visited::after {
+        background-color: #FC6A55;
+    }
+    ul.navs-careers>li.visited .carrerimg-mb>img {
+        border: 1px solid #FC6A55;
+    }
+    .carrerimg-mb>img {
+        position: relative;
+        background-color: #ffffff;
+        z-index: 1;
+    }
+    ul.navs-careers>li>a strong {
+        font-size: 14px;
+    }
+    ul.navs-careers>li>a.active .carrerimg-mb>img {
+        background-color: #FC6A55;
+    }
+    ul.navs-careers>li>a.active img.img-fluid.carrerimg-icon1 {
+        display: none;
+    }
+    ul.navs-careers>li>a.active img.img-fluid.carrerimg-icon2 {
+        display: inline-block;
+    }
+    ul.navs-careers>li>a.active {
+        border-bottom: none;
+    }
+    ul.navs-careers>li>a {
+        display: inline-block;
+        line-height: 16px;
+        border-bottom: none;
+    }
     .solutions-tab-body p {
         -webkit-line-clamp: initial;
         height: auto;
+    }
+    .career-title {
+        text-align: center;
+    }
+    .career-title>h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .career-title>h2 sup {
+        top: -3px;
+    }
+    ul.navs-careers>li>a i {
+        display: none;
+    }
+    .career-title>h6 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .career-title>h6 span::after {
+        margin: 0px 5px;
+    }
+    .careerform-tabs {
+        margin-top: 30px;
+    }
+    .contactcareers-bgimg>h2 {
+        font-size: 18px;
+    }
+    ul.contactcareers-ul {
+        margin: 10px 0px;
+    }
+    li.lifirst-contactcareers {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    li.lifirst-contactcareers::after {
+        right: 10px;
+        top: 1px;
+    }
+    li.lisecond-contactcareers {
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .bg-res.bg-contactcareers {
+        padding: 10px 0px;
+        padding-left: 35%;
+        background-size: 100% 100%;
+    }
+    ul.paralists-ul.ul-inside {
+        margin-left: 30px;
+    }
+    .scholarship-blocks>p {
+        font-size: 12px;
+    }
+    .form-scholarshipessay>p {
+        font-size: 16px;
+    }
+    .scholarship-blocks>h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .awardcandidate-block>img {
+        width: 100px;
+        height: 100px;
+        margin-top: -52px;
+    }
+    .awardcandidate-block>h4 {
+        font-size: 20px;
+    }
+    .awardcandidate-block>h5 {
+        font-size: 16px;
+        margin: 10px 0px 10px;
+    }
+    .row.contact-divsblockrow>div:nth-child(2) {
+        margin: 20% 0px;
+    }
+    .contact-box {
+        height: auto;
+    }
+    .awardcandidate-block>h6 {
+        font-size: 16px;
+    }
+    p.awardcandidate-bgcolor {
+        margin: 20px 0px 0px;
+        font-size: 12px;
+    }
+    .awardcandidate-detail>p {
+        padding: 15px 5%;
+        margin-bottom: 10px;
+    }
+    .bg-imageawardcandidate {
+        display: none;
+    }
+    .scholarship-detailblock>h2 {
+        margin: 30px 0px 20px;
+        font-size: 20px;
+    }
+    .scholarship-detailblock>p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    ul.paralists-ul>li {
+        font-size: 12px;
     }
     .services-inner-card>p {
         -webkit-line-clamp: initial;
@@ -192,12 +413,22 @@ M E D I A  Q U E R I E S
     .carrer-listing-div {
         min-height: fit-content !important;
     }
+    form.business-enquireForm.career-detform .material-textfield {
+        margin-top: 10px;
+    }
+    .radio-div>label {
+        margin: 20px 0px 10px !important;
+    }
+    .select-div>label {
+        margin: 10px 0px 20px !important;
+    }
     .intro-medium {
         font-size: 14px;
     }
     .desc-detail>h4 {
         position: relative;
         cursor: pointer;
+        margin-bottom: 20px;
     }
     h4.head-careerdesc::after {
         content: "\f107"; /* fa-chevron-down */
@@ -526,6 +757,35 @@ M E D I A  Q U E R I E S
     .tools-screenshots>img {
         height: 410px;
     }
+    .contact-box {
+        padding: 0px 7px 20px;
+        height: 250px;
+    }
+    .contactcareers-bgimg>h2 {
+        font-size: 20px;
+    }
+    ul.contactcareers-ul {
+        margin: 20px 0px;
+    }
+    li.lifirst-contactcareers {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    li.lifirst-contactcareers::after {
+        right: 11px;
+        top: 2px;
+    }
+    li.lisecond-contactcareers {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .bg-res.bg-contactcareers {
+        padding: 15px 0px;
+        padding-left: 30%;
+    }
+    p.cont-address {
+        text-align: center;
+    }
     ul.navs-resources li {
         padding: 0px 10px;
     }
@@ -537,6 +797,13 @@ M E D I A  Q U E R I E S
     }
     .stratergy-texts {
         padding-top: 0px;
+    }
+    form.business-enquireForm label {
+        margin: 0 15px 0px 3px;
+        font-size: 12px;
+    }
+    form.business-enquireForm .form-control {
+        font-size: 14px;
     }
     .tool-card-front {
         padding: 50px 10px;
@@ -567,6 +834,9 @@ M E D I A  Q U E R I E S
     }
     button.btn.btn-theme-white {
         font-size: 14px;
+    }
+    .bg-res.bg-contactcareers {
+        padding-left: 35%;
     }
     ul.stage2-services-ul>li {
         width: 32%;
@@ -676,6 +946,9 @@ M E D I A  Q U E R I E S
     .stratergy-texts {
         padding-top: 0px;
     }
+    form.business-enquireForm label {
+        margin: 0 15px 0px 3px;
+    }
     .tool-card {
         height: 200px;
     }
@@ -761,6 +1034,9 @@ M E D I A  Q U E R I E S
     .banner-text.full-width-services-text {
         padding-right: 0;
         padding-left: 0;
+    }
+    .form-careerform {
+        margin: 30px 0px;
     }
     .owl-carousel-careertesti-section .owl-prev {
         left: -8%;
@@ -911,6 +1187,10 @@ M E D I A  Q U E R I E S
     #mainNav.navbar-shrink li.nav-item.last-nav>a {
         color: #000000 !important;
         border: 1px solid #000000;
+    }
+    #mainNav.navbar-shrink li.nav-item.last-nav.active>a {
+        color: #ffffff !important;
+        border: 1px solid #FC6A55;
     }
     #mainNav.navbar-shrink li.nav-item.last-nav>a:hover {
         color: #ffffff !important;
