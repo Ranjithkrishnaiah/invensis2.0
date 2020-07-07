@@ -21,24 +21,6 @@
   a(), e(window).scroll(a)
 }(jQuery);
 
-// !(function($) {
-//   "use strict";
-
-//   // Toggle .navbar-shrink class to #header when page is scrolled
-//   $(window).scroll(function() {
-//     if ($(this).scrollTop() > 50) {
-//       $('#mainNav').addClass('navbar-shrink');
-//     } else {
-//       $('#mainNav').removeClass('navbar-shrink');
-//     }
-//   });
-
-//   if ($(window).scrollTop() > 50) {
-//     $('#header').addClass('navbar-shrink');
-//   }
-
-// })(jQuery);
-
 
 // search full screen
 $(document).ready(function() {
@@ -128,19 +110,112 @@ $(document).ready(function () {
     $(window).on("resize", function (e) {
         checkScreenSize();
     });
-
     checkScreenSize();
-
     function checkScreenSize(){
         var newWindowWidth = $(window).width();
         if (newWindowWidth < 767) {
             //career-detail page js
             $(".desc-detail-body").addClass("collapse");
+            $(".para-footercollapse").addClass("collapse");
         }
         else
         {
             //career-detail page js
             $(".desc-detail-body").removeClass("collapse");
+            $(".para-footercollapse").removeClass("collapse");
+            // service-page modal popup hide
+            $('.modal-servicesbtnmobile').modal('hide');
         }
     }
+});
+
+// sub-services for only mobile screen
+$(".modal-body-servicesbtnmobile").append($(".service-accordian").html());
+
+// fix a subservices-button on scroll
+var fixmeTop = $('.breadcrumb-sec').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.btn-servicesbtn').addClass("fixedtop-subservicesbtn");
+    } else {
+        $('.btn-servicesbtn').removeClass("fixedtop-subservicesbtn");
+    }
+});
+
+
+// fix a resources-lists on scroll
+var fixmeTop = $('.breadcrumb-sec').offset().top;
+$(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+        $('.resourcestab-mb').addClass("fixedtop-resourcestab");
+    } else {
+        $('.resourcestab-mb').removeClass("fixedtop-resourcestab");
+    }
+});
+
+
+// resources horizontal scrolling tabs
+var hidWidth;
+var scrollBarWidths = 40;
+
+var widthOfList = function(){
+var itemsWidth = 100;
+$('.list-restabs a').each(function(){
+    var itemWidth = $(this).outerWidth();
+    itemsWidth+=itemWidth;
+});
+return itemsWidth;
+};
+
+var widthOfHidden = function(){
+return (($('.wrapper-restabs').outerWidth())-widthOfList()-getLeftPosi())-scrollBarWidths;
+};
+
+var getLeftPosi = function(){
+return $('.list-restabs').position().left;
+};
+
+var reAdjust = function(){
+if (($('.wrapper-restabs').outerWidth()) < widthOfList()) {
+    $('.scroller-right').show();
+}
+else {
+    $('.scroller-right').hide();
+}
+
+if (getLeftPosi()<40) {
+    $('.scroller-left').show();
+}
+else {
+    $('.item-restabs').animate({left:"-="+getLeftPosi()+"px"},'slow');
+    $('.scroller-left').hide();
+}
+}
+
+reAdjust();
+
+$(window).on('resize',function(e){
+    reAdjust();
+});
+
+$('.scroller-right').click(function() {
+
+$('.scroller-left').fadeIn('slow');
+//$('.scroller-right').fadeOut('slow');
+
+$('.list-restabs').animate({left:"+="+widthOfHidden()+"px"},'slow',function(){
+
+});
+});
+
+$('.scroller-left').click(function() {
+
+    $('.scroller-right').fadeIn('slow');
+    //$('.scroller-left').fadeOut('slow');
+
+    $('.list-restabs').animate({left:"-="+getLeftPosi()+"px"},'slow',function(){
+
+    });
 });

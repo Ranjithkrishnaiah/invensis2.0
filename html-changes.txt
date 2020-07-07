@@ -1,20 +1,27 @@
-html addition in the below page sections
---------------------------------------------------------------------------------------------
-index.html :
+Home Page:
 
-"Our Solutions" section
-"Top Industries we serve" section
-"Trusted by Over 500 Organizations World Over" section
-"Our Popular Resources" section
-"Partner for Optimal Business Process Performance" section
+1. "Partner for Optimal Business Process Performance" section
 
---------------------------------------------------------------------------------------------
-services.html :
+2. "Footer" section full with custom.js file
+   "index page header menu" mobile icons + sub-services icons
 
-services all 3 tabs section
-"Meet Today’s IT Challenges" section
-"About the Services" section
+3. "service page 3 tabs" icons full section check - change row and col class names
 
---------------------------------------------------------------------------------------------
+4. "serices submenu" mobile popup
 
-Replace all the icons
+5. "quality-compliance page" : "About Invensis" and "clients" section
+
+6. "industry-home page" Industries We Serve orange <hr> tag and class name change
+
+7. "career-listing page" header-nav, banner
+   "career-detail page" map on mobile
+   "career-form page" all icons
+
+8. "resources all pages" : headings remove <h3 class="case-heading case-articles"> to class="case-heading"
+   add floating social icons in mobile for all pages of resources (changes class name for all pages)
+   "resources all pages" scrolling tabs in mobile
+   "resources all pages" related blogs in mobile
+
+9. "index, all pages, quality" clients 2 images
+
+10. "arrows for all the carousel sliders" : add prev, next html and change script

@@ -7,7 +7,6 @@ body {
 h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto', sans-serif;
 }
-
 a:hover{
     text-decoration: none;
 }
@@ -112,7 +111,7 @@ li.nav-item.last-nav span {
     font-weight: bold;
     transition: all 0.3s;
 }
-li.nav-item.last-nav:hover span {
+li.nav-item.last-nav>a:hover span {
     opacity: 1;
     right: 0px;
     transition: all 0.3s;
@@ -137,7 +136,7 @@ select {
 }
 .search-full-view.search-normal-screen {
     opacity: 1;
-    z-index: 1;
+    z-index: 9999;
     transform: scale(1);
 }
 .search-full-view .input-group {
@@ -223,6 +222,9 @@ a.search-mobile-icon.ser-input {
 a.search-mobile-icon.ser-input i {
     color: #000000;
 }
+a.search-mobile-icon.ser-input:hover i {
+    color: #FC6A55;
+}
 /* sub-menu */
 .submenu-ul {
     position: absolute;
@@ -259,8 +261,9 @@ li.nav-item:hover .submenu-ul {
     position: relative;
 }
 .nav-div {
-    display: inline-flex;
-    padding: 20px;
+    display: flex;
+    padding: 15px 20px;
+    background-color: #ffffff;
 }
 .nav-div>img {
     width: 30px;
@@ -282,6 +285,13 @@ li.nav-item:hover .submenu-ul {
     line-height: 15px;
     color: #000000;
     margin: 0;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    height: 29px;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .nav-texts>h4>span {
     position: relative;
@@ -309,7 +319,18 @@ li.nav-item:hover .submenu-ul {
 }
 .submenucol-video {
     width: 100%;
+    height: auto;
     background-color: #FFF0EE;
+}
+.submenu-col>p {
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: 500;
+}
+.intro-text>button:first-of-type, .banner-text>button:first-of-type, li.cont-li1>button:first-of-type {
+    background-color: #FC6A55 !important;
+    border: 1px solid #FC6A55 !important;
+    color: #ffffff;
 }
 /*=============================================================
         navigation & header css ends
@@ -396,10 +417,14 @@ button.btn.btn-theme {
 #particles-js canvas {
     display: block;
     vertical-align: bottom;
-    background-color: #000934;
 }
 header.masthead {
     height: 680px;
+    background-image: url(../images/home-banner/Home-page-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
 }
 #particles-js {
     width: 100%;
@@ -461,6 +486,9 @@ section.home-clients {
     box-shadow: 0px 16px 52px 0px rgba(44, 43, 43, 0.2);
     margin: 0px 35px;
 }
+.clients-block>img {
+    height: 60px;
+}
 /*=============================================================
         home-clients css ends
 ==============================================================*/
@@ -514,7 +542,7 @@ button.btn.btn-more>span {
     box-shadow: 0px 10px 13px 0px rgba(44, 44, 43, 0.09);
 }
 .services-card:hover button.btn.btn-more.ripple {
-    padding: 7px 20px;
+    padding: 7px 20px !important;
     border: 1px solid #FC6A55;
     color: #FC6A55;
     border-radius: 24px;
@@ -535,6 +563,36 @@ button.btn.btn-more:active {
     text-align: center;
     margin-top: 30px;
 }
+button.btn-servicesbtn {
+    display: inline-flex;
+    padding: 0px !important;
+    margin-top: -10px;
+}
+button.btn-servicesbtn>span {
+    font-size: 16px;
+    background-color: #FC6A55;
+    color: #ffffff;
+    padding: 7px 15px 7px 10px;
+}
+.servicesbtnimg-div {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #FC6A55;
+    border-radius: 100%;
+    margin: -4px 0px 0 -11px;
+}
+.servicesbtnimg-div>img {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+}
+/* .servicesbtn-block {
+    position: fixed;
+    top: 9%;
+    left: 0px;
+    z-index: 1024;
+} */
 /*=============================================================
         our-services css ends
 ==============================================================*/
@@ -589,7 +647,7 @@ img.img-fluid.solutions-img {
     background-image: url('../images/solutions/black/Black_Digitalmarketing.svg');
 } */
 .solutions-card:hover button.btn.btn-more.ripple {
-    padding: 7px 20px;
+    padding: 7px 20px !important;
     border: 1px solid #FC6A55;
     color: #FC6A55;
     border-radius: 24px;
@@ -699,6 +757,7 @@ ul.business-icons>li {
     line-height: 16px;
     padding: 0 20px;
     font-size: 12px;
+    display: -webkit-box;
 }
 .div-video-business>iframe {
     border: 10px solid #ffffff;
@@ -933,9 +992,16 @@ section.product-sec {
     border: 0;
     background-color: transparent;
     border-radius: 0px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .card-business.active {
+    background: url(../images/Three\ Simple\ Business\ Strategy\ at\ Invensis\ background\ image-active.png);
     background-color: rgba(245, 245, 245, 0.58);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 img.img-fluid.business-img {
     width: 50px;
@@ -989,18 +1055,19 @@ section.resources-sec {
     padding-bottom: 100px;
 }
 .resource-rel {
-    position: relative;
     height: 90px;
+    overflow: hidden;
 }
 img.img-resources-blog {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .bloger-body {
     padding: 20px;
     position: relative;
 }
 .resources-blog {
+    position: relative;
     color: #000000;
     margin-top: 30px;
     border: 1px solid #E0E0E0;
@@ -1020,8 +1087,11 @@ img.img-resources-blog {
 .bloger-body p {
     padding: 5px 0px;
     font-size: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     color: #000000;
+}
+.bloger-body em {
+    font-size: 12px;
 }
 img.img-resources-blog-icon {
     width: 35px;
@@ -1030,7 +1100,7 @@ img.img-resources-blog-icon {
     background-color: #ffffff;
     border: 1px solid #B9CEDE;
     position: absolute;
-    bottom: -15px;
+    top: 70px;
     right: 10px;
     z-index: 1;
 }
@@ -1040,7 +1110,7 @@ img.word-blog-icon {
 .resources-texts {
     margin-top: 130px;
 }
-.resources-blog:hover .bloger-body>h6 {
+.resources-blog:hover .bloger-body h6,.resources-blog:hover .bloger-body h6 a {
     color: #FC6A55;
 }
 .resources-blog-explore {
@@ -1132,6 +1202,10 @@ ul.organize-ul>li img {
     padding: 30px 20px;
     border-radius: 20px;
     border-top-right-radius: 0px;
+    background-image: url(../images/66.png);
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: initial;
 }
 .organize-body>p {
     font-style: italic;
@@ -1159,7 +1233,7 @@ ul.organize-ul>li img {
 }
 .enquire-div {
     text-align: center;
-    padding: 30px;
+    padding: 30px 20px;
     background-color: #FBFBFB;
     color: #000000;
 }
@@ -1187,6 +1261,9 @@ ul.organize-ul>li img {
 .enquire-div:hover .img-enq2 {
     display: inline-block !important;
 }
+img.img-enq-footer {
+    display: none;
+}
 /*=============================================================
        enquire-sec css ends
 ==============================================================*/
@@ -1210,18 +1287,18 @@ ul.footer-block>li>h5 {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-ul.footer-block>li>p {
+.para-footercollapse>p {
     margin: 0;
     line-height: 27px;
     color: #5D5D5D;
 }
-ul.footer-block>li>p>a, ul.footer-block>li>h6>a {
+.para-footercollapse>p>a, .para-footercollapse>h6>a {
     color: #5D5D5D;
 }
-ul.footer-block>li>p>a:hover {
+.para-footercollapse>p>a:hover {
     color: #FC6A55;
 }
-ul.footer-block>li>h6 {
+.para-footercollapse>h6 {
     font-size: 14px;
     margin: 0;
     line-height: 27px;
@@ -1326,8 +1403,36 @@ section.banner-inner {
     background-position: center;
     background-size: cover;
 }
+section.banner-inner.services-it {
+    background-image: url(../images/services/banners/IT-Service-Banner-image.png);
+}
+section.banner-inner.industries-logistics {
+    background-image: url(../images/industry/banners/Logistics-banner-image.png);
+}
+section.banner-inner.industries-energies {
+    background-image: url(../images/industry/banners/Energy-and-utilities-banner-image.png);
+}
+section.banner-inner.resources-home {
+    background-image: url(../images/resources/All-Resources-main-banner.png);
+}
+section.banner-inner.resources-articles {
+    background-image: url(../images/resources/Article-main-banner.png);
+}
+section.banner-inner.resources-brochures {
+    background-image: url(../images/resources/Brochure-main-banner.png);
+}
+section.banner-inner.resources-casestudies {
+    background-image: url(../images/resources/Case-Study-main-banner.png);
+}
+section.banner-inner.resources-news {
+    background-image: url(../images/resources/News-main-banner.png);
+}
+section.banner-inner.career-banner {
+    background-image: url(../images/careers/career-background-image-with-vector-image.png);
+}
 .banner-text {
-    padding: 17% 47% 8% 0;
+    padding: 15% 10% 8% 10%;
+    text-align: center;
 }
 .banner-text>h1 {
     font-size: 34px;
@@ -1350,6 +1455,7 @@ section.banner-inner {
     font-size: 12px;
     padding-left: 0;
     padding-right: 0;
+    font-weight: 500;
 }
 .breadcrumb-ol>li, .breadcrumb-ol>li>a {
     color: #000000;
@@ -1560,10 +1666,13 @@ section.services-challenges {
 }
 a.owl-control-carousel {
     z-index: 2;
-    color: rgba(0, 0, 0, 0.2);
+    color: rgb(0, 0, 0);
     font-size: 40px;
     width: 0px;
     cursor: pointer;
+}
+a.owl-control-carousel:focus, a.owl-control-carousel:hover {
+    color: #FC6A55 !important;
 }
 .controls-owl-prev {
     margin-left: -20px;
@@ -1613,8 +1722,7 @@ img.img-service-abt {
 }
 /* business enquire form */
 section.business-enquire {
-    /* background-image: url(../images/testiomonials\ bg.png); */
-    background-color: black;
+    background-image: url(../images/services/banners/your-partner.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1653,12 +1761,12 @@ section.business-enquire {
     border-radius: 8px;
     box-shadow: 0px 16px 52px 0px rgba(44, 43, 43, 0.2);
     position: relative;
-    top: 75px;
+    top: 0px;
 }
 .business-enquire-form>h5 {
     text-align: center;
     color: #FC6A55;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #54667a9e !important;
@@ -1775,11 +1883,6 @@ section.organization-sec-inner {
     opacity: 1;
     top: 0px;
     transition: all 0.3s;
-}
-.banner-text.full-width-services-text {
-    padding-right: 25%;
-    padding-left: 25%;
-    text-align: center;
 }
 .img-st2 {
     display: none;
@@ -1942,7 +2045,7 @@ form.business-enquireForm .form-control {
     padding: 10.5px 22px;
 }
 .business-enquireForm .material-textfield textarea {
-    height: 190px !important;
+    height: 150px !important;
 }
 form.business-enquireForm .form-control:focus {
     border: 1px solid #DBDBDB;
@@ -1955,7 +2058,7 @@ form.business-enquireForm input,select,textarea {
 }
 .material-textfield {
     position: relative;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 form.business-enquireForm label {
     position: absolute;
@@ -2047,7 +2150,11 @@ select:focus ~ label, select:valid ~ label {
 .accordian-services-header span {
     position: relative;
     top: 2px;
-    left: 5px;
+    left: 0px;
+    padding-right: 10px;
+}
+.head-toggle-resources {
+    padding-right: 10px;
 }
 .accordian-services-card.active .img-tabing1, .accordian-services-card:hover .img-tabing1 {
     display: none;
@@ -2071,9 +2178,10 @@ select:focus ~ label, select:valid ~ label {
 }
 ul.accordian-services-card-body {
     margin: 0;
-    padding: 5px 0 10px 24%;
+    padding: 5px 0 10px 20%;
 }
 ul.accordian-services-card-body>li {
+    font-size: 14px;
     list-style-type: none;
     line-height: 26px;
 }
@@ -2178,6 +2286,87 @@ section.best-clients.section-padding {
     background-size: contain;
     padding-bottom: 180px;
     margin-bottom: 50px;
+}
+#particles-js-advisor {
+    width: 100%;
+    height: 100%;
+    background-image: url(style.css);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#particles-js-advisor canvas {
+    display: block;
+    vertical-align: bottom;
+}
+.particle-text-advisor {
+    position: absolute;
+    top: 47px;
+    right: 50%;
+    transform: translate(50%,8%);
+}
+section.services-advisor {
+    position: relative;
+    height: 520px;
+}
+img.imgservicetab2 {
+    display: none;
+}
+h4.modal-title.modal-title-servicesbtnmobile {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+}
+.modal-header.modal-header-servicesbtnmobile {
+    padding: 10px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.1), 0px 4px 5px 0px rgba(0, 0, 0, 0.1), 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+.modal-header.modal-header-servicesbtnmobile button {
+    font-size: 36px !important;
+    margin-top: -13px;
+    opacity: 1;
+}
+.modal-header.modal-header-servicesbtnmobile button:hover {
+    color: #FC6A55;
+}
+.modal-header.modal-header-servicesbtnmobile button:focus {
+    outline: none;
+}
+.modal-header.modal-header-servicesbtnmobile button:not(:disabled):not(.disabled):focus, .modal-header.modal-header-servicesbtnmobile button:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+}
+.fixedtop-subservicesbtn {
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    z-index: 1030;
+    transition: all .3s ease-in-out;
+}
+.fixedtop-resourcestab {
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    z-index: 1030;
+    transition: all .3s ease-in-out;
+}
+img.clientscarousel-img2 {
+    display: none !important;
+}
+.clients-block:hover img.clientscarousel-img1 {
+    display: none;
+}
+.clients-block:hover img.clientscarousel-img2 {
+    display: inline-block !important;
+}
+img.clientsquality-img2 {
+    display: none;
+}
+.qualityclientimg:hover img.clientsquality-img1 {
+    display: none;
+}
+.qualityclientimg:hover img.clientsquality-img2 {
+    display: inline-block;
 }
 /*=============================================================
        services page css ends
@@ -2361,6 +2550,7 @@ ul.industry-service-ul>li::before {
     width: 100%;
     height: 520px;
     border: 1px solid #FC6A55;
+    padding: 60px;
 }
 .tabbing-logistics {
     position: relative;
@@ -2481,9 +2671,9 @@ img.img-fluid.img-bpm-sec {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
-    background: url(../images/Combined-Shape-orange.png);
+    background: url(../images/industry/orange\ cruve\ shape\ with\ background\ white\ color.png);
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -3117,6 +3307,61 @@ ul.casestudy-detailsdiv .popular-badge {
 ul.relatedblog-ul img {
     width: 100%;
 }
+/* resources horizontal scrolling tabs */
+.wrapper-restabs {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px;
+    height: 55px;
+    border: 1px solid #D6D6D6;
+    box-shadow: 0px 10px 13px 0px rgba(44, 43, 43, 0.09);
+}
+.list-restabs {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    min-width: 3500px;
+    margin-top: 0px;
+    border: none;
+}
+.list-restabs li{
+	display:table-cell;
+    position:relative;
+    text-align:center;
+    cursor:grab;
+    cursor:-webkit-grab;
+    color:#efefef;
+    vertical-align:middle;
+}
+.list-restabs a{
+    color: #000000;
+    font-size: 14px;
+    border: none !important;
+    padding: 15px 0px;
+    margin: 0 15px;
+}
+.list-restabs a.active{
+    color: #FC6A55 !important;
+    border-bottom: 2px solid #FC6A55 !important;
+}
+.scroller-restabs {
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    padding: 0px 3px;
+    padding-top: 7px;
+    white-space: no-wrap;
+    vertical-align: middle;
+    background-color: #fff;
+    margin-top: 11px;
+}
+section.resourcestab-mb {
+    width: 100%;
+}
+.resourcesotherposts-mb .owl-item {
+    width: 100%;
+}
 /*=============================================================
        resources page css ends
 ==============================================================*/
@@ -3125,7 +3370,7 @@ ul.relatedblog-ul img {
        quality-compliance page css starts
 ==============================================================*/
 section.quality-det-sec {
-    background-image: url(../images/testiomonials\ bg.png);
+    background-image: url(../images/quality-compliance/Quality-and-Compliance-background.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -3139,6 +3384,9 @@ section.quality-det-sec {
 }
 .intro-quality-text button:first-of-type, .banner-text button:first-of-type {
     margin-right: 10px !important;
+}
+section.services-advisor.advisor-quality.section-padding {
+    height: auto;
 }
 .abt-block-text>h2 {
     font-size: 30px;
@@ -3187,15 +3435,19 @@ section.quality-advantage-sec .row.services-abt {
 }
 .abt-value-img>img {
     height: 860px;
+    margin-top: 40px;
 }
 .qualityclientcol {
     margin-top: 50px;
     text-align: center;
 }
 .qualityclientimg {
-    padding: 65px 60px;
+    padding: 70px 50px;
     background-color: #ffffff;
     border: 1px solid #E0E0E0;
+}
+.qualityclientimg img {
+    height: 50px;
 }
 section.quality-clients {
     background-color: #F5F5F5;
@@ -3215,6 +3467,7 @@ section.quality-clients {
 }
 .partner-block>img {
     width: 100%;
+    margin-bottom: 10px;
 }
 .partner-block>p {
     margin: 20px 0px 0px;
@@ -3236,11 +3489,20 @@ section.quality-clients {
 /*=============================================================
        career page css starts
 ==============================================================*/
-.career-text>h1 {
+.career-bannertexts>h1 {
     color: #FC6A55;
     margin-bottom: 5px;
+    font-size: 34px;
+    line-height: 46px;
+    font-weight: 400;
 }
-.career-text>h4 {
+.banner-text.career-text {
+    padding: 8% 0% 2% 0;
+}
+.career-bannerimg {
+    text-align: right;
+}
+.career-bannertexts>h4 {
     color: #000000;
     font-weight: 300;
 }
@@ -3256,7 +3518,7 @@ section.quality-clients {
 .location-badge>span {
     background-color: #FC6A55;
     color: #ffffff;
-    padding: 7px 25px;
+    padding: 7px 15px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -3479,6 +3741,10 @@ ul.navs-careers>li>a i {
     color: #92C449;
     margin-right: 10px;
     font-size: 24px;
+    display: none;
+}
+ul.navs-careers>li.visited i {
+    display: inline-block;
 }
 ul.navs-careers>li>a:hover {
     color: #000000;
@@ -3494,7 +3760,7 @@ ul.navs-careers>li>a.active {
 }
 .select-div>label {
     position: initial !important;
-    margin: 35px 0px 0px !important;
+    margin: 35px 0px 10px !important;
     padding: initial !important;
 }
 .row.select-div-row {
@@ -3503,7 +3769,7 @@ ul.navs-careers>li>a.active {
 .carrerimg-mb>img {
     width: 40px;
     height: 40px;
-    padding: 5px;
+    padding: 0px 10px 0px 10px;
     border: 1px solid #DADADA;
     border-radius: 100%;
 }
@@ -3516,6 +3782,41 @@ img.img-fluid.carrerimg-icon2 {
 .select-div>label span {
     color: #F83732;
 }
+.careertesti-head {
+    background-image: url(../images/careers/Icons/apostrophe.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 17% 50%;
+}
+nav.navbar.career-nav img.logo-black {
+    display: block;
+}
+nav.navbar.career-nav img.logo-white {
+    display: none;
+}
+nav.navbar.career-nav .nav-item .nav-link {
+    color: #000000 !important;
+}
+nav.navbar.career-nav li.nav-item.last-nav>a {
+    border: 1px solid #FC6A55;
+    color: #ffffff !important;
+}
+nav.navbar.career-nav li.nav-item.last-nav>a:hover {
+    border: 1px solid #FC6A55;
+}
+.career-title>h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.career-title>h5 a {
+    color: #FC6A55;
+}
+a.share-carrerdesc::after {
+    content: '';
+    border-right: 1px solid #BEBCBC;
+    margin: 0px 10px;
+}
 /*=============================================================
        career page css ends
 ==============================================================*/
@@ -3524,8 +3825,8 @@ img.img-fluid.carrerimg-icon2 {
        scholarship page css starts
 ==============================================================*/
 section.scholarship-banner {
-    background-image: url(../images/testiomonials\ bg.png);
-    height: 400px;
+    background-image: url(../images/scholarship/Scholarship-Award-background.jpg);
+    height: 360px;
     position: relative;
 }
 div#particles-js-scholarship {
@@ -3601,10 +3902,18 @@ p.awardcandidate-bgcolor {
     margin: 30px 0px 0px;
     background-color: #FFF0EE;
 }
+.awardcandidate-block>h5 span {
+    position: relative;
+    top: 3px;
+}
+.awardcandidate-block>h6 span {
+    position: relative;
+    top: 2px;
+}
 .bg-imageawardcandidate {
     position: absolute;
     bottom: 0;
-    left: 0px;
+    left: -30px;
     width: 200px;
 }
 .scholarship-detailblock>h2 {
@@ -3633,7 +3942,7 @@ ul.paralists-ul>li span {
     margin-top: 10px !important;
 }
 ul.paralists-ul.ul-inside {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 .form-scholarshipessay>p {
     font-size: 18px;
@@ -3667,7 +3976,7 @@ li.nav-item.last-nav.active>a {
 }
 section.contact-banner {
     background-image: url(../images/contact/Background-image.png);
-    height: 930px;
+    height: 1000px;
     position: relative;
     background-size: 100% 100%;
 }
@@ -3685,7 +3994,7 @@ div#particles-js-contact {
 }
 .particle-text-contact {
     position: absolute;
-    bottom: 0px;
+    top: 130px;
     right: 50%;
     transform: translate(50%,0%);
     color: #ffffff;
@@ -3774,6 +4083,7 @@ div#particles-js-contactlooking canvas {
 }
 p.locations-phone {
     text-align: left;
+    font-size: 14px;
 }
 p.locations-phone>img {
     width: 31px;
@@ -3785,6 +4095,7 @@ p.locations-phone>strong {
 }
 p.cont-address {
     text-align: left;
+    font-size: 14px;
 }
 p.open-map {
     color: #FC6A55;
@@ -3845,6 +4156,9 @@ li.lisecond-contactcareers {
 .btnexplore-contactcareers>button {
     background-color: #FC6A55 !important;
     color: #ffffff !important;
+}
+.accordian-card-texts>ul {
+    padding-left: 0px;
 }
 /*=============================================================
        contact page css ends
